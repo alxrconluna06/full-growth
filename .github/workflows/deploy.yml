@@ -1,0 +1,57 @@
+# Publica el sitio en GitHub Pages cada vez que se sube un cambio a la rama main.
+name: Publicar sitio
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Descargar el sitio
+        uses: actions/checkout@v4
+
+      - name: Preparar GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Completar la dirección del sitio
+        run: |
+          set -euo pipefail
+          URL="${{ steps.pages.outputs.base_url }}"
+          URL="${URL%/}/"
+          HOY="$(date -u +%Y-%m-%d)"
+          mkdir -p _site
+          tar --exclude=./.git --exclude=./.github --exclude=./_site --exclude=./README.md -cf - . | tar -xf - -C _site
+          find _site -type f \( -name '*.html' -o -name '*.xml' -o -name '*.txt' \) \
+            -exec sed -i -e "s#__SITE_URL__#${URL}#g" -e "s#__LASTMOD__#${HOY}#g" {} +
+          echo "Sitio preparado para ${URL}"
+
+      - name: Revisar que no queden datos sin completar
+        run: |
+          if grep -rl '__SITE_URL__\|__LASTMOD__' _site; then
+            echo "Quedaron marcadores sin reemplazar" && exit 1
+          fi
+
+      - name: Empaquetar
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Publicar
+        id: deploy
+        uses: actions/deploy-pages@v4
