@@ -1443,6 +1443,7 @@ details > p{overflow:hidden}
     };
     function animate(sel,preset,opts){
       opts=opts||{};
+      if(typeof preset==='string')preset=presets[preset];
       var els=gsap.utils.toArray(sel).filter(function(e){e.classList.remove('reveal');return below(e)});
       if(!els.length)return;
       ScrollTrigger.batch(els,{start:opts.start||'top 90%',once:true,onEnter:function(b){
