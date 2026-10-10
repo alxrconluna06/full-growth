@@ -57,6 +57,19 @@ Cambiá el archivo (por ejemplo `index.html`) desde la web de GitHub con el íco
 - Cargá el sitio en [Google Search Console](https://search.google.com/search-console) y enviá `sitemap.xml` para que Google lo indexe más rápido.
 - Probá cómo se ve al compartirlo en WhatsApp o LinkedIn: tiene que aparecer la imagen violeta con el título.
 
+## Trabajar con Claude Code
+
+El archivo `CLAUDE.md` tiene todo el contexto del proyecto (diseño, tono, decisiones y cómo publicar). Claude Code lo lee solo al empezar cada sesión.
+
+- **En el navegador, sin instalar nada:** entrá a [claude.ai/code](https://claude.ai/code), elegí el repositorio `alxrconluna06/full-growth` y pedí el cambio.
+- **En la app de escritorio de Claude:** pestaña **Code**, elegí la carpeta o el repositorio del proyecto.
+- **En la terminal:** instalá Claude Code ([guía oficial](https://code.claude.com/docs/en/overview)), cloná el repositorio y corré `claude` dentro de la carpeta:
+  ```bash
+  git clone https://github.com/alxrconluna06/full-growth.git
+  cd full-growth
+  claude
+  ```
+
 ## Contacto configurado en el sitio
 
 - WhatsApp: +54 9 11 5122-7198

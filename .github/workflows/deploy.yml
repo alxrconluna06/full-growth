@@ -36,7 +36,7 @@ jobs:
           URL="${URL%/}/"
           HOY="$(date -u +%Y-%m-%d)"
           mkdir -p _site
-          tar --exclude=./.git --exclude=./.github --exclude=./_site --exclude=./README.md -cf - . | tar -xf - -C _site
+          tar --exclude=./.git --exclude=./.github --exclude=./_site --exclude=./README.md --exclude=./CLAUDE.md --exclude=./.claude -cf - . | tar -xf - -C _site
           find _site -type f \( -name '*.html' -o -name '*.xml' -o -name '*.txt' \) \
             -exec sed -i -e "s#__SITE_URL__#${URL}#g" -e "s#__LASTMOD__#${HOY}#g" {} +
           echo "Sitio preparado para ${URL}"
