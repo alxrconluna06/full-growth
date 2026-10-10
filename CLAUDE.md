@@ -9,7 +9,7 @@ Dueño del proyecto: Luna (alxrconluna@gmail.com). Habla en español rioplatense
 - Todo el sitio vive en **`index.html`**: HTML, CSS y JS en un solo archivo, sin build ni dependencias locales.
 - Librerías por CDN, cargadas al final del `<body>`: Lenis (scroll suave), GSAP + ScrollTrigger (animaciones al bajar). Si no cargan, el sitio funciona igual, sin esas animaciones.
 - Tipografías de Google Fonts: **Stack Sans Headline** (títulos) y **Google Sans Flex** (texto, botones y logo).
-- `404.html`, `robots.txt`, `sitemap.xml`, `site.webmanifest` y `assets/` (íconos e imagen para compartir `og-image.png` de 1200×630).
+- `404.html`, `robots.txt`, `sitemap.xml`, `site.webmanifest` y `assets/` (íconos e imagen para compartir `og-image.jpg` de 1200×630). Los íconos y la imagen se generan con `.claude/gen-icons.html` en la raíz de PROYECTO LUNA (doble barra M4).
 - Los marcadores `__SITE_URL__` y `__LASTMOD__` NO se tocan: el workflow los reemplaza al publicar con la URL real de Pages (o del dominio propio).
 
 ## Publicar
