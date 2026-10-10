@@ -48,7 +48,7 @@
   "areaServed": "AR",
   "serviceType": ["Diagnóstico de E-commerce", "Gestión de Mercado Libre", "Tienda online", "Recompra y CRM", "Integraciones"],
   "knowsLanguage": "es-AR",
-  "email": "alxrconluna@gmail.com",
+  "email": "info@full-growth.com.ar",
   "telephone": "+54 9 11 5122-7198",
   "address": {"@type": "PostalAddress", "addressLocality": "Buenos Aires", "addressCountry": "AR"}
 }
@@ -460,7 +460,7 @@ body.menu-open .wa-fab{opacity:0;pointer-events:none}
 .seg-panel{display:grid;grid-template-columns:1.1fr 1fr;gap:18px}
 .seg-visual{border-radius:var(--r-xl);min-height:340px;position:relative;overflow:hidden;padding:28px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;background:var(--g,linear-gradient(150deg,#9a4dff,#2e0b6b))}
 .seg-visual::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 80% 20%,rgba(255,255,255,.28),transparent 60%);pointer-events:none}
-.seg-visual .seg-big{font:500 clamp(34px,4.6vw,56px)/1 var(--f-display);letter-spacing:-.04em;position:relative;max-width:12ch}
+.seg-visual .seg-big{font:500 clamp(34px,4.6vw,56px)/1.04 var(--f-display);letter-spacing:-.04em;position:relative;max-width:12ch;margin-top:10px}
 .seg-visual .seg-chips{display:flex;gap:8px;flex-wrap:wrap;position:relative}
 .seg-visual .seg-chips span{font-size:13px;font-weight:600;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.18);backdrop-filter:blur(6px)}
 .seg-copy{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(24px,3.4vw,40px);display:flex;flex-direction:column;gap:18px}
@@ -740,16 +740,20 @@ details > p{overflow:hidden}
 }
 .price-grid.seg-panel{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
 
-/* Logo A: wide uppercase with violet slash */
+/* Logo M4: spaced uppercase + double bar (lilac + deep violet) */
 .nav-logo{padding:13px 18px!important;gap:0!important}
-.lg{font-family:"Sora",var(--f-display);color:#111;line-height:1}
-.lg-a{display:inline-flex;align-items:center;font-weight:600;font-size:14px;letter-spacing:.3em;margin-right:-.3em;white-space:nowrap}
-.lg-a b{color:#7c2cff;font-weight:700;letter-spacing:0;margin:0 .45em 0 .15em;font-size:1.25em;transform:skewX(-8deg);display:inline-block}
+.lg{font-family:var(--f-display);color:#111;line-height:1}
+.lg-a{display:inline-flex;align-items:center;font-weight:600;font-size:14px;letter-spacing:.22em;margin-right:-.22em;white-space:nowrap}
+.lg-a b{font-weight:600;letter-spacing:-.1em;margin:0 .3em 0 .1em;display:inline-block}
+.lg-a b i{font-style:normal}
+.lg-a b i:first-child{color:#a77bff}
+.lg-a b i:last-child{color:#5a1fc7}
 .foot .lg-a{font-size:17px}
 .foot .nav-logo{padding:16px 22px!important}
-@media (max-width:420px){.nav .lg-a{font-size:12.5px;letter-spacing:.24em}}
+@media (max-width:420px){.nav .lg-a{font-size:12.5px;letter-spacing:.18em;margin-right:-.18em}}
 
 .foot .nav-logo{border:0!important;background:transparent!important;padding:0!important;box-shadow:none!important}
+.foot .lg{color:var(--ink)}
 
 /* nav: logo, links and button share one height */
 .nav .nav-logo{height:52px;padding-block:0!important;display:flex;align-items:center}
@@ -764,10 +768,8 @@ details > p{overflow:hidden}
 .nav .nav-logo .lg{color:#111}
 .nav .nav-cta .btn-primary{background:linear-gradient(135deg,rgba(124,44,255,.92),rgba(94,46,186,.96));border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 
-/* logo uses the same type and size as the "Pedir diagnóstico" button */
-.nav .lg-a{font-family:var(--f-body);font-weight:600;font-size:14px}
-.foot .lg-a,.foot .lg-a b{font-family:var(--f-body)}
-.nav .lg-a b{font-family:var(--f-body)}
+/* logo: same size as the "Pedir diagnóstico" button, display type (M4) */
+.nav .lg-a{font-weight:600;font-size:14px}
 
 /* nav: the three pills slide together when scrolling (Habitline-style) */
 @media (min-width:901px){
@@ -791,23 +793,23 @@ details > p{overflow:hidden}
 <header class="nav" id="top">
   <div class="wrap">
     <a class="nav-logo" href="#inicio" aria-label="Full Growth, inicio">
-      <span class="lg lg-a" aria-hidden="true">FULL<b>/</b>GROWTH</span>
+      <span class="lg lg-a" aria-hidden="true">FULL<b><i>/</i><i>/</i></b>GROWTH</span>
     </a>
     <ul class="nav-links">
       <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#para-quien">Para quién</a></li>
+      <li><a href="#para-quien">Para Quién</a></li>
       <li><a href="#planes">Soluciones</a></li>
       <li><a href="#preguntas">Preguntas</a></li>
     </ul>
     <div class="nav-cta">
-      <a class="btn btn-primary" href="#contacto"><span class="roll"><span>Pedir diagnóstico</span><span aria-hidden="true">Pedir diagnóstico</span></span></a>
+      <a class="btn btn-primary" href="#contacto"><span class="roll"><span>Pedir Diagnóstico</span><span aria-hidden="true">Pedir Diagnóstico</span></span></a>
       <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Abrir menú"><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></button>
     </div>
   </div>
   <div class="wrap"><nav class="mobile-menu" id="mobileMenu" aria-label="Menú" hidden>
-    <a class="mm-link" href="#servicios" style="--i:0"><span>Servicios</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="mm-link" href="#para-quien" style="--i:1"><span>Para quién</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="mm-link" href="#planes" style="--i:3"><span>Soluciones</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="mm-link" href="#preguntas" style="--i:4"><span>Preguntas</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="mm-link" href="#servicios" style="--i:0"><span>Servicios</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="mm-link" href="#para-quien" style="--i:1"><span>Para Quién</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="mm-link" href="#planes" style="--i:3"><span>Soluciones</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="mm-link" href="#preguntas" style="--i:4"><span>Preguntas</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     <div class="mm-foot" style="--i:5">
-      <a class="btn btn-primary mm-link-cta" href="#contacto"><span class="roll"><span>Pedir diagnóstico</span><span aria-hidden="true">Pedir diagnóstico</span></span></a>
+      <a class="btn btn-primary mm-link-cta" href="#contacto"><span class="roll"><span>Pedir Diagnóstico</span><span aria-hidden="true">Pedir Diagnóstico</span></span></a>
       <a class="mm-wa" href="https://wa.me/5491151227198?text=Hola%2C%20Full%20Growth.%20Quiero%20saber%20m%C3%A1s%20sobre%20sus%20servicios." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3.4 29l6.4-1.7c2 1.1 4 1.6 6.2 1.6 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.8 1 1-3.7-.3-.4a10.3 10.3 0 0 1-1.6-5.9C5.3 10 10.1 5.3 16 5.3s10.7 4.7 10.7 10.5S21.9 26.6 16 26.6z"/></svg><span>Escribinos por WhatsApp</span></a>
     </div>
   </nav></div>
@@ -820,10 +822,10 @@ details > p{overflow:hidden}
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="wrap">
     <div class="hero-inner">
-      <h1 id="h1"><span class="w" style="--i:0">Hacé</span> <span class="w" style="--i:1">crecer</span> <span class="w" style="--i:2">tu</span> <span class="w" style="--i:3">marca</span> <span class="w" style="--i:4">dentro</span> <span class="w" style="--i:5">y</span> <span class="w" style="--i:6"><em>fuera</em></span> <span class="w" style="--i:7">de</span> <span class="w" style="--i:8">Mercado</span> <span class="w" style="--i:9">Libre.</span></h1>
+      <h1 id="h1"><span class="w" style="--i:0">Hacé</span> <span class="w" style="--i:1">Crecer</span> <span class="w" style="--i:2">Tu</span> <span class="w" style="--i:3">Marca</span> <span class="w" style="--i:4">Dentro</span> <span class="w" style="--i:5">y</span> <span class="w" style="--i:6"><em>Fuera</em></span> <span class="w" style="--i:7">de</span> <span class="w" style="--i:8">Mercado</span> <span class="w" style="--i:9">Libre.</span></h1>
       <div class="hero-ctas">
-        <a class="btn btn-light" href="#contacto"><span class="roll"><span>Quiero mi diagnóstico</span><span aria-hidden="true">Quiero mi diagnóstico</span></span></a>
-        <a class="btn btn-ghost" href="#planes"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 5-6"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-top:18px"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 5-6"/></svg></span><span class="roll"><span>Ver soluciones</span><span aria-hidden="true">Ver soluciones</span></span></a>
+        <a class="btn btn-light" href="#contacto"><span class="roll"><span>Quiero Mi Diagnóstico</span><span aria-hidden="true">Quiero Mi Diagnóstico</span></span></a>
+        <a class="btn btn-ghost" href="#planes"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 5-6"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-top:18px"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 5-6"/></svg></span><span class="roll"><span>Ver Soluciones</span><span aria-hidden="true">Ver Soluciones</span></span></a>
       </div>
     </div>
 
@@ -837,7 +839,7 @@ details > p{overflow:hidden}
           <div><small>Seguidores</small><b class="num">1.240</b><em class="num">▲ 9%</em></div>
           <div><small>Compradores</small><b class="num">3.140</b><em class="num">▲ 14%</em></div>
         </div>
-        <div class="m-sub"><span class="dash-title">Evolución de tus ventas</span><span class="m-pills"><span class="on">Ventas</span><span>Visitas</span></span></div>
+        <div class="m-sub"><span class="dash-title">Evolución de Tus Ventas</span><span class="m-pills"><span class="on">Ventas</span><span>Visitas</span></span></div>
         <div class="m-plot" id="mPlot" data-bars='[{"d":1,"o":20,"a":6,"p":5,"x":6.91,"y":62.26},{"d":2,"o":16,"a":13,"p":3,"x":10.02,"y":61.55},{"d":3,"o":16,"a":13,"p":2,"x":13.12,"y":62.26},{"d":4,"o":24,"a":6,"p":2,"x":16.23,"y":61.55},{"d":5,"o":24,"a":18,"p":2,"x":19.34,"y":53.05},{"d":6,"o":21,"a":16,"p":8,"x":22.45,"y":52.34},{"d":7,"o":28,"a":13,"p":8,"x":25.55,"y":49.51},{"d":8,"o":19,"a":20,"p":3,"x":28.66,"y":54.47},{"d":9,"o":22,"a":10,"p":4,"x":31.77,"y":58.72},{"d":10,"o":34,"a":11,"p":6,"x":34.88,"y":48.1},{"d":11,"o":32,"a":14,"p":6,"x":37.98,"y":47.39},{"d":12,"o":22,"a":10,"p":4,"x":41.09,"y":58.72},{"d":13,"o":34,"a":16,"p":5,"x":44.2,"y":45.26},{"d":14,"o":33,"a":17,"p":6,"x":47.3,"y":44.56},{"d":15,"o":37,"a":21,"p":6,"x":50.41,"y":38.89},{"d":16,"o":34,"a":19,"p":11,"x":53.52,"y":38.89},{"d":17,"o":37,"a":16,"p":13,"x":56.62,"y":37.47},{"d":18,"o":27,"a":18,"p":12,"x":59.73,"y":43.85},{"d":19,"o":28,"a":20,"p":6,"x":62.84,"y":45.97},{"d":20,"o":38,"a":25,"p":11,"x":65.95,"y":31.81},{"d":21,"o":42,"a":18,"p":13,"x":69.05,"y":32.52},{"d":22,"o":38,"a":23,"p":12,"x":72.16,"y":32.52},{"d":23,"o":43,"a":29,"p":13,"x":75.27,"y":24.02},{"d":24,"o":40,"a":16,"p":16,"x":78.38,"y":33.22},{"d":25,"o":41,"a":30,"p":18,"x":81.48,"y":21.19},{"d":26,"o":35,"a":22,"p":17,"x":84.59,"y":31.81},{"d":27,"o":31,"a":23,"p":14,"x":87.7,"y":36.06},{"d":28,"o":33,"a":18,"p":20,"x":90.8,"y":33.93},{"d":29,"o":34,"a":21,"p":18,"x":93.91,"y":32.52},{"d":30,"o":48,"a":19,"p":20,"x":97.02,"y":22.6}]'>
           <svg class="m-chart" viewBox="0 0 560 190" role="img" aria-label="Gráfico de ejemplo: ventas diarias de septiembre por origen, creciendo a lo largo del mes"><line x1="30" x2="552" y1="160.0" y2="160.0" stroke="#ececf1" stroke-dasharray="0"/><text x="24" y="163.0" text-anchor="end" font-size="9" fill="#8a8a96">0</text><line x1="30" x2="552" y1="92.7" y2="92.7" stroke="#ececf1" stroke-dasharray="3 4"/><text x="24" y="95.7" text-anchor="end" font-size="9" fill="#8a8a96">50</text><line x1="30" x2="552" y1="25.5" y2="25.5" stroke="#ececf1" stroke-dasharray="3 4"/><text x="24" y="28.5" text-anchor="end" font-size="9" fill="#8a8a96">100</text><g class="m-bar"><rect x="33.3" y="133.1" width="10.8" height="26.9" rx="2" fill="#7c2cff"/><rect x="33.3" y="125.0" width="10.8" height="8.1" rx="2" fill="#c8a6ff"/><rect x="33.3" y="118.3" width="10.8" height="6.7" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="50.7" y="138.5" width="10.8" height="21.5" rx="2" fill="#7c2cff"/><rect x="50.7" y="121.0" width="10.8" height="17.5" rx="2" fill="#c8a6ff"/><rect x="50.7" y="116.9" width="10.8" height="4.0" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="68.1" y="138.5" width="10.8" height="21.5" rx="2" fill="#7c2cff"/><rect x="68.1" y="121.0" width="10.8" height="17.5" rx="2" fill="#c8a6ff"/><rect x="68.1" y="118.3" width="10.8" height="2.7" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="85.5" y="127.7" width="10.8" height="32.3" rx="2" fill="#7c2cff"/><rect x="85.5" y="119.6" width="10.8" height="8.1" rx="2" fill="#c8a6ff"/><rect x="85.5" y="116.9" width="10.8" height="2.7" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="102.9" y="127.7" width="10.8" height="32.3" rx="2" fill="#7c2cff"/><rect x="102.9" y="103.5" width="10.8" height="24.2" rx="2" fill="#c8a6ff"/><rect x="102.9" y="100.8" width="10.8" height="2.7" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="120.3" y="131.7" width="10.8" height="28.3" rx="2" fill="#7c2cff"/><rect x="120.3" y="110.2" width="10.8" height="21.5" rx="2" fill="#c8a6ff"/><rect x="120.3" y="99.5" width="10.8" height="10.8" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="137.7" y="122.3" width="10.8" height="37.7" rx="2" fill="#7c2cff"/><rect x="137.7" y="104.8" width="10.8" height="17.5" rx="2" fill="#c8a6ff"/><rect x="137.7" y="94.1" width="10.8" height="10.8" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="155.1" y="134.4" width="10.8" height="25.6" rx="2" fill="#7c2cff"/><rect x="155.1" y="107.5" width="10.8" height="26.9" rx="2" fill="#c8a6ff"/><rect x="155.1" y="103.5" width="10.8" height="4.0" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="172.5" y="130.4" width="10.8" height="29.6" rx="2" fill="#7c2cff"/><rect x="172.5" y="116.9" width="10.8" height="13.5" rx="2" fill="#c8a6ff"/><rect x="172.5" y="111.6" width="10.8" height="5.4" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="189.9" y="114.3" width="10.8" height="45.7" rx="2" fill="#7c2cff"/><rect x="189.9" y="99.5" width="10.8" height="14.8" rx="2" fill="#c8a6ff"/><rect x="189.9" y="91.4" width="10.8" height="8.1" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="207.3" y="116.9" width="10.8" height="43.1" rx="2" fill="#7c2cff"/><rect x="207.3" y="98.1" width="10.8" height="18.8" rx="2" fill="#c8a6ff"/><rect x="207.3" y="90.0" width="10.8" height="8.1" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="224.7" y="130.4" width="10.8" height="29.6" rx="2" fill="#7c2cff"/><rect x="224.7" y="116.9" width="10.8" height="13.5" rx="2" fill="#c8a6ff"/><rect x="224.7" y="111.6" width="10.8" height="5.4" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="242.1" y="114.3" width="10.8" height="45.7" rx="2" fill="#7c2cff"/><rect x="242.1" y="92.7" width="10.8" height="21.5" rx="2" fill="#c8a6ff"/><rect x="242.1" y="86.0" width="10.8" height="6.7" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="259.5" y="115.6" width="10.8" height="44.4" rx="2" fill="#7c2cff"/><rect x="259.5" y="92.7" width="10.8" height="22.9" rx="2" fill="#c8a6ff"/><rect x="259.5" y="84.7" width="10.8" height="8.1" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="276.9" y="110.2" width="10.8" height="49.8" rx="2" fill="#7c2cff"/><rect x="276.9" y="82.0" width="10.8" height="28.3" rx="2" fill="#c8a6ff"/><rect x="276.9" y="73.9" width="10.8" height="8.1" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="294.3" y="114.3" width="10.8" height="45.7" rx="2" fill="#7c2cff"/><rect x="294.3" y="88.7" width="10.8" height="25.6" rx="2" fill="#c8a6ff"/><rect x="294.3" y="73.9" width="10.8" height="14.8" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="311.7" y="110.2" width="10.8" height="49.8" rx="2" fill="#7c2cff"/><rect x="311.7" y="88.7" width="10.8" height="21.5" rx="2" fill="#c8a6ff"/><rect x="311.7" y="71.2" width="10.8" height="17.5" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="329.1" y="123.7" width="10.8" height="36.3" rx="2" fill="#7c2cff"/><rect x="329.1" y="99.5" width="10.8" height="24.2" rx="2" fill="#c8a6ff"/><rect x="329.1" y="83.3" width="10.8" height="16.1" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="346.5" y="122.3" width="10.8" height="37.7" rx="2" fill="#7c2cff"/><rect x="346.5" y="95.4" width="10.8" height="26.9" rx="2" fill="#c8a6ff"/><rect x="346.5" y="87.3" width="10.8" height="8.1" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="363.9" y="108.9" width="10.8" height="51.1" rx="2" fill="#7c2cff"/><rect x="363.9" y="75.2" width="10.8" height="33.6" rx="2" fill="#c8a6ff"/><rect x="363.9" y="60.4" width="10.8" height="14.8" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="381.3" y="103.5" width="10.8" height="56.5" rx="2" fill="#7c2cff"/><rect x="381.3" y="79.3" width="10.8" height="24.2" rx="2" fill="#c8a6ff"/><rect x="381.3" y="61.8" width="10.8" height="17.5" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="398.7" y="108.9" width="10.8" height="51.1" rx="2" fill="#7c2cff"/><rect x="398.7" y="77.9" width="10.8" height="30.9" rx="2" fill="#c8a6ff"/><rect x="398.7" y="61.8" width="10.8" height="16.1" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="416.1" y="102.1" width="10.8" height="57.9" rx="2" fill="#7c2cff"/><rect x="416.1" y="63.1" width="10.8" height="39.0" rx="2" fill="#c8a6ff"/><rect x="416.1" y="45.6" width="10.8" height="17.5" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="433.5" y="106.2" width="10.8" height="53.8" rx="2" fill="#7c2cff"/><rect x="433.5" y="84.7" width="10.8" height="21.5" rx="2" fill="#c8a6ff"/><rect x="433.5" y="63.1" width="10.8" height="21.5" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="450.9" y="104.8" width="10.8" height="55.2" rx="2" fill="#7c2cff"/><rect x="450.9" y="64.5" width="10.8" height="40.4" rx="2" fill="#c8a6ff"/><rect x="450.9" y="40.3" width="10.8" height="24.2" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="468.3" y="112.9" width="10.8" height="47.1" rx="2" fill="#7c2cff"/><rect x="468.3" y="83.3" width="10.8" height="29.6" rx="2" fill="#c8a6ff"/><rect x="468.3" y="60.4" width="10.8" height="22.9" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="485.7" y="118.3" width="10.8" height="41.7" rx="2" fill="#7c2cff"/><rect x="485.7" y="87.3" width="10.8" height="30.9" rx="2" fill="#c8a6ff"/><rect x="485.7" y="68.5" width="10.8" height="18.8" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="503.1" y="115.6" width="10.8" height="44.4" rx="2" fill="#7c2cff"/><rect x="503.1" y="91.4" width="10.8" height="24.2" rx="2" fill="#c8a6ff"/><rect x="503.1" y="64.5" width="10.8" height="26.9" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="520.5" y="114.3" width="10.8" height="45.7" rx="2" fill="#7c2cff"/><rect x="520.5" y="86.0" width="10.8" height="28.3" rx="2" fill="#c8a6ff"/><rect x="520.5" y="61.8" width="10.8" height="24.2" rx="2" fill="#3a0f86"/></g><g class="m-bar"><rect x="537.9" y="95.4" width="10.8" height="64.6" rx="2" fill="#7c2cff"/><rect x="537.9" y="69.9" width="10.8" height="25.6" rx="2" fill="#c8a6ff"/><rect x="537.9" y="42.9" width="10.8" height="26.9" rx="2" fill="#3a0f86"/></g><text x="38.7" y="176" text-anchor="middle" font-size="9" fill="#8a8a96">1 sep</text><text x="195.3" y="176" text-anchor="middle" font-size="9" fill="#8a8a96">10 sep</text><text x="369.3" y="176" text-anchor="middle" font-size="9" fill="#8a8a96">20 sep</text><text x="543.3" y="176" text-anchor="middle" font-size="9" fill="#8a8a96">30 sep</text></svg>
           <span class="m-hl" id="mHl" aria-hidden="true"></span>
@@ -846,8 +848,8 @@ details > p{overflow:hidden}
         <div class="dash-legend"><span><i style="background:#7c2cff"></i>Orgánico</span><span><i style="background:#c8a6ff"></i>Anuncios</span><span><i style="background:#3a0f86"></i>Tienda propia</span></div>
       </div>
       <div class="dash dash-rep">
-        <div class="dash-top"><span class="dash-title">Reputación de la cuenta</span><span class="tag">Ejemplo</span></div>
-        <div class="rep-head"><span class="rep-medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3l3 6M17 3l-3 6"/><circle cx="12" cy="15" r="6"/><path d="M12 12.5l.9 1.8 2 .3-1.4 1.4.3 2-1.8-1-1.8 1 .3-2-1.4-1.4 2-.3z" fill="currentColor" stroke="none"/></svg></span><div><b class="rep-level">Vendedor líder · Nivel platino</b><span class="rep-sub">Uno de los mejores del sitio</span></div></div>
+        <div class="dash-top"><span class="dash-title">Reputación de La Cuenta</span><span class="tag">Ejemplo</span></div>
+        <div class="rep-head"><span class="rep-medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3l3 6M17 3l-3 6"/><circle cx="12" cy="15" r="6"/><path d="M12 12.5l.9 1.8 2 .3-1.4 1.4.3 2-1.8-1-1.8 1 .3-2-1.4-1.4 2-.3z" fill="currentColor" stroke="none"/></svg></span><div><b class="rep-level">Vendedor Líder · Nivel Platino</b><span class="rep-sub">Uno de los mejores del sitio</span></div></div>
         <div class="thermo" aria-label="Termómetro de reputación en verde, el nivel más alto"><span></span><span></span><span></span><span></span><span class="on"></span></div>
         <div class="rep-rows">
           <div>Reclamos<b class="num">0,4%</b></div>
@@ -861,7 +863,7 @@ details > p{overflow:hidden}
         </div>
       </div>
       <div class="dash dash-origin">
-        <div class="dash-top"><span class="dash-title">Origen de tus ventas</span><span class="tag">Ejemplo</span></div>
+        <div class="dash-top"><span class="dash-title">Origen de Tus Ventas</span><span class="tag">Ejemplo</span></div>
         <div class="o-total"><small>Total del mes</small><b class="num">2.830</b><em class="num">▲ 16%</em></div>
         <div class="o-bars">
           <div><span>Búsqueda</span><i style="--w:100%"></i><b class="num">46%</b></div>
@@ -869,7 +871,7 @@ details > p{overflow:hidden}
           <div><span>Tienda propia</span><i style="--w:39%;background:#3a0f86"></i><b class="num">18%</b></div>
           <div><span>Recompra</span><i style="--w:17%;background:#6d7bff"></i><b class="num">8%</b></div>
         </div>
-        <div class="o-line"><div class="dash-top" style="margin:12px 0 4px"><span class="dash-title" style="font-size:13px">Ventas por día</span><span class="o-today num">Hoy 128</span></div><svg class="m-line" viewBox="0 0 260 110" role="img" aria-label="Línea de ejemplo: ventas por día con picos y caídas, cerrando en alza">
+        <div class="o-line"><div class="dash-top" style="margin:12px 0 4px"><span class="dash-title" style="font-size:13px">Ventas Por Día</span><span class="o-today num">Hoy 128</span></div><svg class="m-line" viewBox="0 0 260 110" role="img" aria-label="Línea de ejemplo: ventas por día con picos y caídas, cerrando en alza">
 <defs><linearGradient id="lg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7c2cff" stop-opacity=".22"/><stop offset="1" stop-color="#7c2cff" stop-opacity="0"/></linearGradient></defs>
 <g stroke="#ececf1" stroke-dasharray="3 4"><line x1="0" x2="260" y1="10" y2="10"/><line x1="0" x2="260" y1="51.0" y2="51.0"/><line x1="0" x2="260" y1="92" y2="92"/></g>
 <path d="M6.0 51.0 C7.8 49.0 13.2 42.0 16.8 39.4 C20.4 36.7 24.0 35.8 27.6 35.1 C31.2 34.4 34.8 33.3 38.3 35.1 C41.9 36.9 45.5 43.2 49.1 45.9 C52.7 48.6 56.3 44.4 59.9 51.4 C63.5 58.4 67.1 87.8 70.7 87.9 C74.3 88.0 77.9 59.0 81.5 52.1 C85.1 45.1 88.7 47.4 92.3 46.4 C95.9 45.3 99.4 47.4 103.0 45.9 C106.6 44.4 110.2 42.6 113.8 37.3 C117.4 32.0 121.0 14.9 124.6 14.1 C128.2 13.3 131.8 29.0 135.4 32.6 C139.0 36.1 142.6 33.8 146.2 35.2 C149.8 36.7 153.4 33.6 157.0 41.1 C160.6 48.5 164.1 78.3 167.7 80.1 C171.3 81.9 174.9 58.1 178.5 51.8 C182.1 45.6 185.7 45.5 189.3 42.7 C192.9 39.8 196.5 37.7 200.1 34.7 C203.7 31.7 207.3 27.7 210.9 24.6 C214.5 21.5 218.1 17.0 221.7 16.1 C225.2 15.3 228.8 17.7 232.4 19.4 C236.0 21.1 239.6 24.2 243.2 26.3 C246.8 28.4 252.2 31.2 254.0 32.2 L254 110 L6 110Z" fill="url(#lg1)"/>
@@ -888,8 +890,8 @@ details > p{overflow:hidden}
     <div class="dark-slab market reveal">
       <div class="market-grid">
         <div>
-          <span class="eyebrow plain">Por qué ahora</span>
-          <h2 id="mk">Cada vez se compra más online. La pregunta es dónde te encuentran.</h2>
+          <span class="eyebrow plain">Por Qué Ahora</span>
+          <h2 id="mk">Cada Vez Se Compra Más Online. La Pregunta Es Dónde Te Encuentran.</h2>
           <p class="market-lead">En 2025 el comercio electrónico argentino creció muy por encima de la inflación. Las marcas que ordenan hoy sus canales digitales son las que se quedan con esa demanda mañana.</p>
         </div>
         <div>
@@ -902,7 +904,7 @@ details > p{overflow:hidden}
         <div class="stat"><strong class="num" data-count="645" data-suf=" M">645 M</strong><span>de productos comprados online en el año</span></div>
         <div class="stat"><strong class="num" data-count="143128" data-pre="$">$143.128</strong><span>es lo que gasta en promedio cada compra</span></div>
       </div>
-      <p style="margin-top:28px;color:#fff;font-weight:600">Algunas de las categorías que más crecieron</p>
+      <p style="margin-top:28px;color:#fff;font-weight:600">Algunas de Las Categorías Que Más Crecieron</p>
       <div class="cats"><span>Infantiles<b>+209%</b></span><span>Construcción y herramientas<b>+117%</b></span><span>Deportes<b>+71%</b></span><span>Electrodomésticos<b>+70%</b></span></div>
       <p class="source">Fuente: Cámara Argentina de Comercio Electrónico (CACE), vía <a href="https://mercado.com.ar/tendencias/cace-el-ecommerce-facturo-35-326-983-millones-en-2025-y-subio-60" target="_blank" rel="noopener">Revista Mercado</a>.</p>
     </div>
@@ -913,82 +915,82 @@ details > p{overflow:hidden}
 <section class="sec" id="servicios" aria-labelledby="sv" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow plain">Qué hacemos</span>
-      <h2 id="sv">Todo lo que tu canal digital necesita, en un mismo equipo</h2>
+      <span class="eyebrow plain">Qué Hacemos</span>
+      <h2 id="sv">Todo Lo Que Tu Canal Digital Necesita, En Un Mismo Equipo</h2>
       <p>Empezá por lo más urgente y sumá el resto a tu ritmo. Nosotros nos ocupamos de que todo funcione junto.</p>
     </div>
     <div class="bento">
       <article class="b b-2 ember reveal">
-        <span class="kicker">Por dónde empezar</span>
+        <span class="kicker">Por Dónde Empezar</span>
         <h3>Diagnóstico 360</h3>
         <p>Antes de mover una sola publicación, entendemos qué está frenando tus ventas. Revisamos tu cuenta de punta a punta y te entregamos un plan de acción para los próximos 90 días.</p>
         <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Qué está frenando tus ventas</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Cómo estás frente a tu competencia</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Qué hacer primero, segundo y tercero</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Qué Está Frenando Tus Ventas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Cómo Estás Frente A Tu Competencia</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Qué Hacer Primero, Segundo y Tercero</li>
         </ul>
-        <span class="price-pill">El primer paso recomendado</span>
+        <span class="price-pill">El Primer Paso Recomendado</span>
       </article>
 
       <article class="b b-1 dark reveal">
         <div class="b-1-inner">
           <div style="display:grid;gap:14px">
             <span class="kicker">Marketplaces</span>
-            <h3>Más ventas en Mercado Libre, sin depender de la publicidad</h3>
+            <h3>Más Ventas En Mercado Libre, Sin Depender de La Publicidad</h3>
             <p>Aprovechamos todas las herramientas que la plataforma te da para vender más, y usamos los anuncios como un impulso extra, no como la base.</p>
             <ul>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Publicaciones optimizadas y precios competitivos</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Promociones, ofertas y campañas que te dan visibilidad</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Preguntas, reclamos y reputación siempre al día</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Anuncios medidos, para potenciar lo que ya vende</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Publicaciones Optimizadas y Precios Competitivos</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Promociones, Ofertas y Campañas Que Te Dan Visibilidad</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Preguntas, Reclamos y Reputación Siempre Al Día</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Anuncios Medidos, Para Potenciar Lo Que Ya Vende</li>
             </ul>
-            <span class="price-pill">Gestión mensual continua</span>
+            <span class="price-pill">Gestión Mensual Continua</span>
           </div>
-          <div class="rings" aria-label="Indicadores de ejemplo de una cuenta gestionada"><span class="rings-tag">Ejemplo</span><div class="ring"><div class="ring-box"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="10"/><circle class="prog" cx="50" cy="50" r="42" fill="none" stroke="#7c2cff" stroke-width="10" stroke-linecap="round" style="--c:263.9" stroke-dasharray="263.9" stroke-dashoffset="36.9"/></svg><b class="num">86%</b></div><small>Publicaciones optimizadas</small></div><div class="ring"><div class="ring-box"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="10"/><circle class="prog" cx="50" cy="50" r="42" fill="none" stroke="#c8a6ff" stroke-width="10" stroke-linecap="round" style="--c:263.9" stroke-dasharray="263.9" stroke-dashoffset="95.0"/></svg><b class="num">64%</b></div><small>Productos en promoción</small></div><div class="ring"><div class="ring-box"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="10"/><circle class="prog" cx="50" cy="50" r="42" fill="none" stroke="#6d7bff" stroke-width="10" stroke-linecap="round" style="--c:263.9" stroke-dasharray="263.9" stroke-dashoffset="0"/></svg><b class="num">100%</b></div><small>Preguntas respondidas</small></div></div>
+          <div class="rings" aria-label="Indicadores de ejemplo de una cuenta gestionada"><span class="rings-tag">Ejemplo</span><div class="ring"><div class="ring-box"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="10"/><circle class="prog" cx="50" cy="50" r="42" fill="none" stroke="#7c2cff" stroke-width="10" stroke-linecap="round" style="--c:263.9" stroke-dasharray="263.9" stroke-dashoffset="36.9"/></svg><b class="num">86%</b></div><small>Publicaciones Optimizadas</small></div><div class="ring"><div class="ring-box"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="10"/><circle class="prog" cx="50" cy="50" r="42" fill="none" stroke="#c8a6ff" stroke-width="10" stroke-linecap="round" style="--c:263.9" stroke-dasharray="263.9" stroke-dashoffset="95.0"/></svg><b class="num">64%</b></div><small>Productos En Promoción</small></div><div class="ring"><div class="ring-box"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="10"/><circle class="prog" cx="50" cy="50" r="42" fill="none" stroke="#6d7bff" stroke-width="10" stroke-linecap="round" style="--c:263.9" stroke-dasharray="263.9" stroke-dashoffset="0"/></svg><b class="num">100%</b></div><small>Preguntas Respondidas</small></div></div>
         </div>
       </article>
 
 
       <article class="b b-3 reveal">
-        <span class="kicker">Tienda propia</span>
-        <h3>Del marketplace a tu propia tienda</h3>
+        <span class="kicker">Tienda Propia</span>
+        <h3>Del Marketplace A Tu Propia Tienda</h3>
         <p>Los clientes que te conocen en Mercado Libre pueden volver a comprarte directo, en tu tienda y con mejor margen para vos.</p>
         <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Tienda en Tiendanube o Shopify, con tu identidad</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Stock y precios sincronizados con tu cuenta</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Más margen en cada venta</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Tienda En Tiendanube o Shopify, Con Tu Identidad</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Stock y Precios Sincronizados Con Tu Cuenta</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Más Margen En Cada Venta</li>
         </ul>
-        <span class="price-pill">Tu marca, tu margen</span>
+        <span class="price-pill">Tu Marca, Tu Margen</span>
       </article>
 
       <article class="b b-4 dark reveal">
         <span class="kicker">Recompra</span>
-        <h3>Antes y después de la compra, siempre cerca</h3>
+        <h3>Antes y Después de La Compra, Siempre Cerca</h3>
         <p>Si alguien dudó, lo ayudamos a decidir. Si ya te compró, hacemos que vuelva.</p>
         <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Carritos abandonados: un empujón para terminar la compra</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Campañas de recompra según lo que compró cada cliente</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Clientes actuales: ofertas y avisos para volver a comprar</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Mensajes automáticos por WhatsApp y email</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Carritos Abandonados: Un Empujón Para Terminar La Compra</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Campañas de Recompra Según Lo Que Compró Cada Cliente</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Clientes Actuales: Ofertas y Avisos Para Volver A Comprar</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Mensajes Automáticos Por WhatsApp y Email</li>
         </ul>
         <div class="notif" aria-hidden="true">
           <div class="notif-card float"><div class="meta"><span>WhatsApp · 1 hora después</span><span>Carrito</span></div><b>¿Te quedó algo pendiente?</b> Tu carrito te espera con envío gratis hasta hoy.</div>
         </div>
-        <span class="price-pill">Email y WhatsApp automáticos</span>
+        <span class="price-pill">Email y WhatsApp Automáticos</span>
       </article>
 
       <article class="b b-5 lilac reveal">
         <span class="kicker">Tecnología</span>
-        <h3>Nunca más vendas algo que no tenés</h3>
+        <h3>Nunca Más Vendas Algo Que No Tenés</h3>
         <p>Unimos tus canales para que el stock y los pedidos se actualicen solos. Menos tareas repetitivas, menos errores.</p>
         <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Stock actualizado en tiempo real en todos tus canales</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Precios ajustados a las comisiones de cada canal</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Pedidos que llegan directo a logística</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Un panel con tus ventas y margen por canal</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Stock Actualizado En Tiempo Real En Todos Tus Canales</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Precios Ajustados A Las Comisiones de Cada Canal</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Pedidos Que Llegan Directo A Logística</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Un Panel Con Tus Ventas y Margen Por Canal</li>
         </ul>
         <div class="flow" aria-label="Mercado Libre, tienda, ERP y logística conectados"><span>MeLi</span><i></i><span>Tienda</span><i></i><span>ERP</span><i></i><span>Logística</span></div>
-        <span class="price-pill">Hecho a tu medida</span>
+        <span class="price-pill">Hecho A Tu Medida</span>
       </article>
     </div>
   </div>
@@ -998,40 +1000,40 @@ details > p{overflow:hidden}
 <section class="sec" id="para-quien" aria-labelledby="pq" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow plain">Para quién</span>
-      <h2 id="pq">Cada marca está en un momento distinto</h2>
+      <span class="eyebrow plain">Para Quién</span>
+      <h2 id="pq">Cada Marca Está En Un Momento Distinto</h2>
       <p>Elegí el que más se parece al tuyo y te contamos cómo arrancaríamos.</p>
     </div>
     <div class="tabs" role="tablist" aria-label="Tipos de empresa">
-      <button class="tab" role="tab" id="t-0" aria-selected="true" aria-controls="p-0">Quiero vender más</button>
-      <button class="tab" role="tab" id="t-1" aria-selected="false" aria-controls="p-1" tabindex="-1">Fabrico o importo</button>
-      <button class="tab" role="tab" id="t-2" aria-selected="false" aria-controls="p-2" tabindex="-1">Tengo una marca conocida</button>
-      <button class="tab" role="tab" id="t-3" aria-selected="false" aria-controls="p-3" tabindex="-1">Tengo locales</button>
-      <button class="tab" role="tab" id="t-4" aria-selected="false" aria-controls="p-4" tabindex="-1">Mi operación es compleja</button>
+      <button class="tab" role="tab" id="t-0" aria-selected="true" aria-controls="p-0">Quiero Vender Más</button>
+      <button class="tab" role="tab" id="t-1" aria-selected="false" aria-controls="p-1" tabindex="-1">Fabrico o Importo</button>
+      <button class="tab" role="tab" id="t-2" aria-selected="false" aria-controls="p-2" tabindex="-1">Tengo Una Marca Conocida</button>
+      <button class="tab" role="tab" id="t-3" aria-selected="false" aria-controls="p-3" tabindex="-1">Tengo Locales</button>
+      <button class="tab" role="tab" id="t-4" aria-selected="false" aria-controls="p-4" tabindex="-1">Mi Operación Es Compleja</button>
     </div>
 
     <div class="seg-panel show" role="tabpanel" id="p-0" aria-labelledby="t-0">
-      <div class="seg-visual" style="--g:linear-gradient(150deg,#a855f7,#4c1d95 80%)"><div class="seg-big">Tu cuenta puede dar mucho más.</div><div class="seg-chips"><span>Publicaciones</span><span>Precios</span><span>Promociones</span></div></div>
-      <div class="seg-copy"><span class="seg-label">Lo que suele pasar</span><h3>Ya tenés ventas. Ahora toca escalarlas.</h3><p>Optimizamos tus publicaciones, aprovechamos las promociones de la plataforma y usamos los anuncios solo donde suman. Así tus ventas vuelven a crecer.</p><div class="seg-entry"><span>Cómo arrancamos</span><b>Diagnóstico y gestión mensual</b></div></div>
+      <div class="seg-visual" style="--g:linear-gradient(150deg,#a855f7,#4c1d95 80%)"><div class="seg-big">Tu Cuenta Puede Dar Mucho Más.</div><div class="seg-chips"><span>Publicaciones</span><span>Precios</span><span>Promociones</span></div></div>
+      <div class="seg-copy"><span class="seg-label">Lo Que Suele Pasar</span><h3>Ya Tenés Ventas. Ahora Toca Escalarlas.</h3><p>Optimizamos tus publicaciones, aprovechamos las promociones de la plataforma y usamos los anuncios solo donde suman. Así tus ventas vuelven a crecer.</p><div class="seg-entry"><span>Cómo Arrancamos</span><b>Diagnóstico y Gestión Mensual</b></div></div>
     </div>
     <div class="seg-panel" role="tabpanel" id="p-1" aria-labelledby="t-1" hidden>
-      <div class="seg-visual" style="--g:linear-gradient(135deg,#6366f1,#3b0764 85%)"><div class="seg-big">De proveedor a marca.</div><div class="seg-chips"><span>Venta directa</span><span>Margen</span><span>Escala</span></div></div>
-      <div class="seg-copy"><span class="seg-label">Lo que suele pasar</span><h3>Tenés el producto, pero el margen se lo lleva otro</h3><p>Vender directo al consumidor te deja más ganancia por unidad. Te ayudamos a hacerlo en Mercado Libre y en tu propia tienda, sin descuidar a tus clientes mayoristas.</p><div class="seg-entry"><span>Cómo arrancamos</span><b>Lanzamiento en Mercado Libre y tienda</b></div></div>
+      <div class="seg-visual" style="--g:linear-gradient(135deg,#6366f1,#3b0764 85%)"><div class="seg-big">De Proveedor A Marca.</div><div class="seg-chips"><span>Venta Directa</span><span>Margen</span><span>Escala</span></div></div>
+      <div class="seg-copy"><span class="seg-label">Lo Que Suele Pasar</span><h3>Tenés El Producto, Pero El Margen Se Lo Lleva Otro</h3><p>Vender directo al consumidor te deja más ganancia por unidad. Te ayudamos a hacerlo en Mercado Libre y en tu propia tienda, sin descuidar a tus clientes mayoristas.</p><div class="seg-entry"><span>Cómo Arrancamos</span><b>Lanzamiento En Mercado Libre y Tienda</b></div></div>
     </div>
     <div class="seg-panel" role="tabpanel" id="p-2" aria-labelledby="t-2" hidden>
-      <div class="seg-visual" style="--g:linear-gradient(165deg,#c084fc,#6b21a8 80%)"><div class="seg-big">Tu marca ya vende. Hagamos que rinda más.</div><div class="seg-chips"><span>Diagnóstico</span><span>Plan de acción</span><span>Recompra</span></div></div>
-      <div class="seg-copy"><span class="seg-label">Lo que suele pasar</span><h3>Tenés marca, tienda y ventas, pero sentís que podría dar más</h3><p>Analizamos todos tus canales para encontrar dónde está la oportunidad, armamos un plan de acción claro y activamos la recompra para que tus clientes vuelvan más seguido.</p><div class="seg-entry"><span>Cómo arrancamos</span><b>Diagnóstico 360 y plan de acción</b></div></div>
+      <div class="seg-visual" style="--g:linear-gradient(165deg,#c084fc,#6b21a8 80%)"><div class="seg-big">Tu Marca Ya Vende. Hagamos Que Rinda Más.</div><div class="seg-chips"><span>Diagnóstico</span><span>Plan de Acción</span><span>Recompra</span></div></div>
+      <div class="seg-copy"><span class="seg-label">Lo Que Suele Pasar</span><h3>Tenés Marca, Tienda y Ventas, Pero Sentís Que Podría Dar Más</h3><p>Analizamos todos tus canales para encontrar dónde está la oportunidad, armamos un plan de acción claro y activamos la recompra para que tus clientes vuelvan más seguido.</p><div class="seg-entry"><span>Cómo Arrancamos</span><b>Diagnóstico 360 y Plan de Acción</b></div></div>
     </div>
     <div class="seg-panel" role="tabpanel" id="p-3" aria-labelledby="t-3" hidden>
-      <div class="seg-visual" style="--g:linear-gradient(120deg,#d946ef,#6d28d9 75%)"><div class="seg-big">Del mostrador a la pantalla.</div><div class="seg-chips"><span>Marketplace</span><span>Tienda online</span><span>WhatsApp</span></div></div>
-      <div class="seg-copy"><span class="seg-label">Lo que suele pasar</span><h3>Tenés clientes fieles en el local, pero casi no vendés online</h3><p>Armamos tu presencia digital completa: marketplace para salir a vender rápido, tienda propia y mensajes para que tus clientes de siempre también te compren online.</p><div class="seg-entry"><span>Cómo arrancamos</span><b>Plan digital completo</b></div></div>
+      <div class="seg-visual" style="--g:linear-gradient(120deg,#d946ef,#6d28d9 75%)"><div class="seg-big">Del Mostrador A La Pantalla.</div><div class="seg-chips"><span>Marketplace</span><span>Tienda Online</span><span>WhatsApp</span></div></div>
+      <div class="seg-copy"><span class="seg-label">Lo Que Suele Pasar</span><h3>Tenés Clientes Fieles En El Local, Pero Casi No Vendés Online</h3><p>Armamos tu presencia digital completa: marketplace para salir a vender rápido, tienda propia y mensajes para que tus clientes de siempre también te compren online.</p><div class="seg-entry"><span>Cómo Arrancamos</span><b>Plan Digital Completo</b></div></div>
     </div>
     <div class="seg-panel" role="tabpanel" id="p-4" aria-labelledby="t-4" hidden>
-      <div class="seg-visual" style="--g:linear-gradient(200deg,#312e81,#8b5cf6 90%)"><div class="seg-big">Un solo stock, todos los canales.</div><div class="seg-chips"><span>Sistema de gestión</span><span>Logística</span><span>Apps</span></div></div>
-      <div class="seg-copy"><span class="seg-label">Lo que suele pasar</span><h3>Manejás varios canales, un sistema de gestión y logística propia</h3><p>Conectamos todo para que stock, precios y pedidos se actualicen solos. Y si tu operación lo necesita, desarrollamos una app a tu medida.</p><div class="seg-entry"><span>Cómo arrancamos</span><b>Integraciones y desarrollo</b></div></div>
+      <div class="seg-visual" style="--g:linear-gradient(200deg,#312e81,#8b5cf6 90%)"><div class="seg-big">Un Solo Stock, Todos Los Canales.</div><div class="seg-chips"><span>Sistema de Gestión</span><span>Logística</span><span>Apps</span></div></div>
+      <div class="seg-copy"><span class="seg-label">Lo Que Suele Pasar</span><h3>Manejás Varios Canales, Un Sistema de Gestión y Logística Propia</h3><p>Conectamos todo para que stock, precios y pedidos se actualicen solos. Y si tu operación lo necesita, desarrollamos una app a tu medida.</p><div class="seg-entry"><span>Cómo Arrancamos</span><b>Integraciones y Desarrollo</b></div></div>
     </div>
 
-    <div class="qualify reveal"><span>Encajamos mejor con marcas que tienen</span><div>Un catálogo en marcha</div><div>Stock propio</div><div>Margen para invertir en crecer</div><div>Ganas de decidir rápido</div></div>
+    <div class="qualify reveal"><span>Encajamos Mejor Con Marcas Que Tienen</span><div>Un Catálogo En Marcha</div><div>Stock Propio</div><div>Margen Para Invertir En Crecer</div><div>Ganas de Decidir Rápido</div></div>
   </div>
 </section>
 
@@ -1041,47 +1043,47 @@ details > p{overflow:hidden}
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow plain">Soluciones</span>
-      <h2 id="pl">Armá tu plan según lo que necesitás hoy</h2>
+      <h2 id="pl">Armá Tu Plan Según Lo Que Necesitás Hoy</h2>
       <p>Todas las soluciones se combinan entre sí. Después del diagnóstico te armamos una propuesta a la medida de tu marca.</p>
     </div>
     <div class="tabs" role="tablist" aria-label="Líneas de servicio">
       <button class="tab" role="tab" id="pt-0" aria-selected="true" aria-controls="pp-0">Marketplaces</button>
-      <button class="tab" role="tab" id="pt-1" aria-selected="false" aria-controls="pp-1" tabindex="-1">Tienda propia</button>
-      <button class="tab" role="tab" id="pt-2" aria-selected="false" aria-controls="pp-2" tabindex="-1">Recompra y tecnología</button>
+      <button class="tab" role="tab" id="pt-1" aria-selected="false" aria-controls="pp-1" tabindex="-1">Tienda Propia</button>
+      <button class="tab" role="tab" id="pt-2" aria-selected="false" aria-controls="pp-2" tabindex="-1">Recompra y Tecnología</button>
     </div>
 
     <div class="price-grid seg-panel show" role="tabpanel" id="pp-0" aria-labelledby="pt-0">
-      <article class="reveal pcard"><div class="ptype"><span>Para empezar</span></div><h3>Diagnóstico 360</h3><p>Una radiografía completa de tu cuenta y un plan de acción para los próximos 90 días.</p></article>
-      <article class="reveal pcard"><div class="ptype"><span>Para empezar</span></div><h3>Lanzamiento</h3><p>Abrimos tu cuenta y la dejamos lista para vender: publicaciones, fotos, fichas y envíos.</p></article>
+      <article class="reveal pcard"><div class="ptype"><span>Para Empezar</span></div><h3>Diagnóstico 360</h3><p>Una radiografía completa de tu cuenta y un plan de acción para los próximos 90 días.</p></article>
+      <article class="reveal pcard"><div class="ptype"><span>Para Empezar</span></div><h3>Lanzamiento</h3><p>Abrimos tu cuenta y la dejamos lista para vender: publicaciones, fotos, fichas y envíos.</p></article>
       <article class="reveal pcard"><div class="ptype"><span>Mensual</span></div><h3>Gestión Esencial</h3><p>Nos ocupamos del día a día: publicaciones, preguntas, reclamos y reputación.</p></article>
-      <article class="reveal pcard feature"><div class="ptype"><span>Mensual</span><em>Para escalar</em></div><h3>Gestión Crecimiento</h3><p>Todo lo anterior, más anuncios, precios, promociones y envíos con Full. Una parte de nuestro trabajo depende de cuánto crecés.</p></article>
+      <article class="reveal pcard feature"><div class="ptype"><span>Mensual</span><em>Para Escalar</em></div><h3>Gestión Crecimiento</h3><p>Todo lo anterior, más anuncios, precios, promociones y envíos con Full. Una parte de nuestro trabajo depende de cuánto crecés.</p></article>
       <article class="reveal pcard"><div class="ptype"><span>Mensual</span></div><h3>Gestión Multimarketplace</h3><p>Llevamos tu catálogo a otros marketplaces de la región, con el stock sincronizado.</p></article>
     </div>
     <div class="price-grid seg-panel" role="tabpanel" id="pp-1" aria-labelledby="pt-1" hidden>
-      <article class="reveal pcard"><div class="ptype"><span>Proyecto</span></div><h3>Landing de campaña</h3><p>Una página enfocada en un producto o lanzamiento, con pagos y WhatsApp integrados.</p></article>
-      <article class="reveal pcard feature"><div class="ptype"><span>Proyecto</span><em>La más pedida</em></div><h3>Tienda online</h3><p>Tu tienda en Tiendanube o Shopify, con tu identidad, tu catálogo y todo listo para cobrar y enviar.</p></article>
-      <article class="reveal pcard"><div class="ptype"><span>Proyecto</span></div><h3>Tienda a gran escala</h3><p>Para catálogos grandes, venta mayorista o conexión con tu sistema de gestión.</p></article>
-      <article class="reveal pcard"><div class="ptype"><span>Mensual</span></div><h3>Crecimiento del sitio</h3><p>Posicionamiento, email y anuncios para que tu tienda reciba visitas que compran.</p></article>
-      <article class="reveal pcard"><div class="ptype"><span>Mensual</span></div><h3>Soporte continuo</h3><p>Actualizaciones, mejoras y una mano cada vez que la necesites.</p></article>
+      <article class="reveal pcard"><div class="ptype"><span>Proyecto</span></div><h3>Landing de Campaña</h3><p>Una página enfocada en un producto o lanzamiento, con pagos y WhatsApp integrados.</p></article>
+      <article class="reveal pcard feature"><div class="ptype"><span>Proyecto</span><em>La Más Pedida</em></div><h3>Tienda Online</h3><p>Tu tienda en Tiendanube o Shopify, con tu identidad, tu catálogo y todo listo para cobrar y enviar.</p></article>
+      <article class="reveal pcard"><div class="ptype"><span>Proyecto</span></div><h3>Tienda A Gran Escala</h3><p>Para catálogos grandes, venta mayorista o conexión con tu sistema de gestión.</p></article>
+      <article class="reveal pcard"><div class="ptype"><span>Mensual</span></div><h3>Crecimiento Del Sitio</h3><p>Posicionamiento, email y anuncios para que tu tienda reciba visitas que compran.</p></article>
+      <article class="reveal pcard"><div class="ptype"><span>Mensual</span></div><h3>Soporte Continuo</h3><p>Actualizaciones, mejoras y una mano cada vez que la necesites.</p></article>
     </div>
     <div class="price-grid seg-panel" role="tabpanel" id="pp-2" aria-labelledby="pt-2" hidden>
-      <article class="reveal pcard feature"><div class="ptype"><span>Proyecto + mensual</span><em>Recomendado</em></div><h3>Recompra automática</h3><p>Segmentamos a tus clientes y les escribimos por email y WhatsApp en el momento justo.</p></article>
+      <article class="reveal pcard feature"><div class="ptype"><span>Proyecto + Mensual</span><em>Recomendado</em></div><h3>Recompra Automática</h3><p>Segmentamos a tus clientes y les escribimos por email y WhatsApp en el momento justo.</p></article>
       <article class="reveal pcard"><div class="ptype"><span>Proyecto</span></div><h3>Integraciones</h3><p>Stock, precios y pedidos sincronizados entre marketplace, tienda, sistema de gestión y logística.</p></article>
-      <article class="reveal pcard"><div class="ptype"><span>Proyecto</span></div><h3>App propia</h3><p>Una app de compra o fidelización para iOS y Android, conectada a tu tienda.</p></article>
-      <article class="reveal pcard"><div class="ptype"><span>Proyecto</span></div><h3>Panel de datos</h3><p>Un tablero con ventas y margen por canal, para decidir con números.</p></article>
+      <article class="reveal pcard"><div class="ptype"><span>Proyecto</span></div><h3>App Propia</h3><p>Una app de compra o fidelización para iOS y Android, conectada a tu tienda.</p></article>
+      <article class="reveal pcard"><div class="ptype"><span>Proyecto</span></div><h3>Panel de Datos</h3><p>Un tablero con ventas y margen por canal, para decidir con números.</p></article>
     </div>
 
     <div class="dark-slab combo reveal">
       <div>
-        <span class="eyebrow plain">Nuestra combinación favorita</span>
+        <span class="eyebrow plain">Nuestra Combinación Favorita</span>
         <h3 style="margin-top:16px">Canal Doble</h3>
         <p style="margin-top:12px;max-width:46ch">Crecé en el marketplace mientras construís el canal que es 100% tuyo: más ventas hoy, más clientes propios mañana.</p>
-        <div class="combo-terms"><b>Beneficio especial en la puesta en marcha</b><b>Acompañamiento de 6 meses</b></div>
+        <div class="combo-terms"><b>Beneficio Especial En La Puesta En Marcha</b><b>Acompañamiento de 6 Meses</b></div>
       </div>
       <div class="combo-parts">
-        <div><span>1</span>Gestión de tu cuenta</div>
-        <div><span>2</span>Tienda online</div>
-        <div><span>3</span>Recompra automática</div>
+        <div><span>1</span>Gestión de Tu Cuenta</div>
+        <div><span>2</span>Tienda Online</div>
+        <div><span>3</span>Recompra Automática</div>
       </div>
     </div>
   </div>
@@ -1094,18 +1096,18 @@ details > p{overflow:hidden}
   <button type="button" class="faq-close" id="faqClose" data-faq-close aria-label="Cerrar preguntas frecuentes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   <div class="faq-wrap">
     <div class="faq-aside">
-      <span class="eyebrow plain" style="width:fit-content">Preguntas frecuentes</span>
-      <h2 id="fq" style="font-size:clamp(30px,4.2vw,50px)">Preguntas que nos hacen seguido</h2>
-      <div class="faq-help"><h3>¿Te quedó alguna duda?</h3><p>Escribinos y lo charlamos sin compromiso.</p><a class="btn btn-dark" href="#contacto"><span class="roll"><span>Escribinos</span><span aria-hidden="true">Escribinos</span></span></a></div>
+      <span class="eyebrow plain" style="width:fit-content">Preguntas Frecuentes</span>
+      <h2 id="fq" style="font-size:clamp(30px,4.2vw,50px)">Preguntas Que Nos Hacen Seguido</h2>
+      <div class="faq-help"><h3>¿Te Quedó Alguna Duda?</h3><p>Escribinos y lo charlamos sin compromiso.</p><a class="btn btn-dark" href="#contacto"><span class="roll"><span>Escribinos</span><span aria-hidden="true">Escribinos</span></span></a></div>
     </div>
     <div class="faq">
-      <details open><summary>¿Tengo que estar vendiendo en Mercado Libre para empezar?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>No. Si recién arrancás, te ayudamos a abrir la cuenta y a dejarla lista para vender. Si ya vendés, vamos directo a lo que más impacto tiene.</p></details>
-      <details><summary>¿Cuánto cuesta trabajar con ustedes?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Depende de lo que necesite tu marca. Después del diagnóstico te pasamos una propuesta a medida, con alcance y tiempos claros.</p></details>
-      <details><summary>¿Cuándo voy a ver resultados?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Los primeros cambios suelen notarse en pocas semanas. Para resultados sólidos en ventas y reputación, trabajamos con acompañamientos de al menos 6 meses.</p></details>
-      <details><summary>¿Cómo sé que vamos a apuntar al mismo objetivo?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>En algunos planes, una parte de lo que cobramos depende de cuánto crecen tus ventas. Si a vos no te va bien, a nosotros tampoco.</p></details>
-      <details><summary>¿Trabajan con otros marketplaces?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Sí. Cuando tu cuenta está lista, sumamos otros marketplaces de la región con el stock sincronizado entre todos.</p></details>
-      <details><summary>¿Cómo manejan los proyectos de desarrollo?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Con alcance definido desde el inicio y entregas por etapas, para que siempre sepas qué recibís y cuándo.</p></details>
-      <details><summary>¿Son parte de Mercado Libre?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>No. Full Growth es una consultora independiente. Trabajamos sobre tu cuenta, con tus accesos y siempre dentro de las reglas de cada plataforma.</p></details>
+      <details open><summary>¿Tengo Que Estar Vendiendo En Mercado Libre Para Empezar?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>No. Si recién arrancás, te ayudamos a abrir la cuenta y a dejarla lista para vender. Si ya vendés, vamos directo a lo que más impacto tiene.</p></details>
+      <details><summary>¿Cuánto Cuesta Trabajar Con Ustedes?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Depende de lo que necesite tu marca. Después del diagnóstico te pasamos una propuesta a medida, con alcance y tiempos claros.</p></details>
+      <details><summary>¿Cuándo Voy A Ver Resultados?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Los primeros cambios suelen notarse en pocas semanas. Para resultados sólidos en ventas y reputación, trabajamos con acompañamientos de al menos 6 meses.</p></details>
+      <details><summary>¿Cómo Sé Que Vamos A Apuntar Al Mismo Objetivo?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>En algunos planes, una parte de lo que cobramos depende de cuánto crecen tus ventas. Si a vos no te va bien, a nosotros tampoco.</p></details>
+      <details><summary>¿Trabajan Con Otros Marketplaces?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Sí. Cuando tu cuenta está lista, sumamos otros marketplaces de la región con el stock sincronizado entre todos.</p></details>
+      <details><summary>¿Cómo Manejan Los Proyectos de Desarrollo?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Con alcance definido desde el inicio y entregas por etapas, para que siempre sepas qué recibís y cuándo.</p></details>
+      <details><summary>¿Son Parte de Mercado Libre?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>No. Full Growth es una consultora independiente. Trabajamos sobre tu cuenta, con tus accesos y siempre dentro de las reglas de cada plataforma.</p></details>
     </div>
   </div>
   </div>
@@ -1116,7 +1118,7 @@ details > p{overflow:hidden}
   <div class="wrap">
     <div class="dark-slab cta">
       <div>
-        <h2 id="ct">Contanos sobre tu marca</h2>
+        <h2 id="ct">Contanos Sobre Tu Marca</h2>
         <p class="lead">Dejanos tus datos y el link de tu cuenta o tienda. Te respondemos con las primeras oportunidades que vemos para crecer.</p>
         <div class="cta-points">
           <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Te respondemos en menos de 48 horas hábiles</div>
@@ -1127,7 +1129,7 @@ details > p{overflow:hidden}
       <div class="form" id="formBox">
         <form id="leadForm" novalidate>
           <div style="display:grid;gap:14px">
-            <h3>Pedí tu diagnóstico</h3>
+            <h3>Pedí Tu Diagnóstico</h3>
             <div class="form-row">
               <div class="field"><label for="f-name">Nombre</label><input id="f-name" name="name" autocomplete="name" required placeholder="Martina López"><span class="err" id="e-name"></span></div>
               <div class="field"><label for="f-company">Empresa</label><input id="f-company" name="company" autocomplete="organization" placeholder="Tu marca"></div>
@@ -1142,19 +1144,19 @@ details > p{overflow:hidden}
                 <option>Vendo mucho y quiero escalar</option>
                 <option>Tengo una operación grande y compleja</option>
               </select></div>
-            <button class="btn btn-primary" type="submit"><span class="roll"><span>Preparar mi pedido</span><span aria-hidden="true">Preparar mi pedido</span></span></button>
+            <button class="btn btn-primary" type="submit"><span class="roll"><span>Preparar Mi Pedido</span><span aria-hidden="true">Preparar Mi Pedido</span></span></button>
             <small>Usamos tus datos solo para responderte.</small>
           </div>
         </form>
         <div class="done" id="doneBox" hidden>
-          <h3>Tu pedido está listo</h3>
+          <h3>Tu Pedido Está Listo</h3>
           <p style="color:#3f3f46;font-size:14.5px">Envialo por WhatsApp con un toque, o tocá el email para mandarlo por correo.</p>
           <pre id="msgOut"></pre>
-          <div class="contact-line">Email: <a id="mailAddr" href="mailto:alxrconluna@gmail.com"><code>alxrconluna@gmail.com</code></a></div>
+          <div class="contact-line">Email: <a id="mailAddr" href="mailto:info@full-growth.com.ar"><code>info@full-growth.com.ar</code></a></div>
           <div class="done-actions">
-            <a class="btn btn-primary" id="waSend" href="https://wa.me/5491151227198" target="_blank" rel="noopener" style="background:#25d366;color:#06311a"><span class="roll"><span>Enviar por WhatsApp</span><span aria-hidden="true">Enviar por WhatsApp</span></span></a>
-            <button class="btn btn-outline" type="button" id="copyBtn">Copiar mensaje</button>
-            <button class="btn btn-outline" type="button" id="editBtn">Editar datos</button>
+            <a class="btn btn-primary" id="waSend" href="https://wa.me/5491151227198" target="_blank" rel="noopener" style="background:#25d366;color:#06311a"><span class="roll"><span>Enviar Por WhatsApp</span><span aria-hidden="true">Enviar Por WhatsApp</span></span></a>
+            <button class="btn btn-outline" type="button" id="copyBtn">Copiar Mensaje</button>
+            <button class="btn btn-outline" type="button" id="editBtn">Editar Datos</button>
           </div>
           <small id="copyStatus" role="status" aria-live="polite"></small>
         </div>
@@ -1168,12 +1170,12 @@ details > p{overflow:hidden}
   <div class="wrap">
     <div class="foot">
       <div>
-        <a class="nav-logo" href="#inicio" aria-label="Full Growth, volver al inicio"><span class="lg lg-a" aria-hidden="true">FULL<b>/</b>GROWTH</span></a>
+        <a class="nav-logo" href="#inicio" aria-label="Full Growth, volver al inicio"><span class="lg lg-a" aria-hidden="true">FULL<b><i>/</i><i>/</i></b>GROWTH</span></a>
         <p>Pensamos tu E-commerce como si fuera nuestro.</p>
       </div>
-      <div><h4>Servicios</h4><ul><li><a href="#servicios">Marketplaces</a></li><li><a href="#servicios">E-commerce propio</a></li><li><a href="#servicios">CRM y recompra</a></li><li><a href="#servicios">Integraciones y apps</a></li></ul></div>
-      <div><h4>Empresa</h4><ul><li><a href="#planes">Soluciones</a></li><li><a href="#preguntas">Preguntas frecuentes</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
-      <div><h4>Contacto</h4><ul class="contact-list"><li><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" style="color:#25d366"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3.4 29l6.4-1.7c2 1.1 4 1.6 6.2 1.6 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.8 1 1-3.7-.3-.4a10.3 10.3 0 0 1-1.6-5.9C5.3 10 10.1 5.3 16 5.3s10.7 4.7 10.7 10.5S21.9 26.6 16 26.6z"/><path d="M21.9 18.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><a href="https://wa.me/5491151227198" target="_blank" rel="noopener">+54 9 11 5122-7198</a></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:alxrconluna@gmail.com">alxrconluna@gmail.com</a></li></ul></div>
+      <div><h4>Servicios</h4><ul><li><a href="#servicios">Marketplaces</a></li><li><a href="#servicios">E-commerce Propio</a></li><li><a href="#servicios">CRM y Recompra</a></li><li><a href="#servicios">Integraciones y Apps</a></li></ul></div>
+      <div><h4>Empresa</h4><ul><li><a href="#planes">Soluciones</a></li><li><a href="#preguntas">Preguntas Frecuentes</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
+      <div><h4>Contacto</h4><ul class="contact-list"><li><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" style="color:#25d366"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3.4 29l6.4-1.7c2 1.1 4 1.6 6.2 1.6 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.8 1 1-3.7-.3-.4a10.3 10.3 0 0 1-1.6-5.9C5.3 10 10.1 5.3 16 5.3s10.7 4.7 10.7 10.5S21.9 26.6 16 26.6z"/><path d="M21.9 18.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><a href="https://wa.me/5491151227198" target="_blank" rel="noopener">+54 9 11 5122-7198</a></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@full-growth.com.ar">info@full-growth.com.ar</a></li></ul></div>
     </div>
     <div class="legal">
       <p>Full Growth es una consultora independiente y no está afiliada a Mercado Libre. Mercado Libre, Mercado Ads y Full son marcas de sus respectivos titulares.</p>
@@ -1240,7 +1242,7 @@ details > p{overflow:hidden}
     var company=val('f-company'),link=val('f-link'),rev=document.getElementById('f-rev').value;
     out.textContent='Hola, Full Growth. Quiero pedir un Diagnóstico 360.\n\nNombre: '+name+(company?'\nEmpresa: '+company:'')+'\nEmail: '+email+(link?'\nCuenta o tienda: '+link:'')+'\nMomento de la marca: '+rev;
     document.getElementById('waSend').href='https://wa.me/5491151227198?text='+encodeURIComponent(out.textContent);
-    document.getElementById('mailAddr').href='mailto:alxrconluna@gmail.com?subject='+encodeURIComponent('Pedido de Diagnóstico 360')+'&body='+encodeURIComponent(out.textContent);
+    document.getElementById('mailAddr').href='mailto:info@full-growth.com.ar?subject='+encodeURIComponent('Pedido de Diagnóstico 360')+'&body='+encodeURIComponent(out.textContent);
     form.hidden=true;done.hidden=false;document.getElementById('copyStatus').textContent='';
   });
   document.getElementById('editBtn').addEventListener('click',function(){done.hidden=true;form.hidden=false;document.getElementById('f-name').focus()});
@@ -1472,7 +1474,7 @@ details > p{overflow:hidden}
 
     // 8. Parallax inside the segment panels and the report
     gsap.utils.toArray('.seg-visual').forEach(function(v){
-      gsap.fromTo(v.querySelector('.seg-big'),{y:40},{y:-40,ease:'none',scrollTrigger:{trigger:v,start:'top bottom',end:'bottom top',scrub:true}});
+      gsap.fromTo(v.querySelector('.seg-big'),{y:18},{y:-18,ease:'none',scrollTrigger:{trigger:v,start:'top bottom',end:'bottom top',scrub:true}});
     });
     gsap.fromTo('.big-stat',{x:-40},{x:30,ease:'none',scrollTrigger:{trigger:'.market',start:'top bottom',end:'bottom top',scrub:true}});
 

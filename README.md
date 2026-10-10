@@ -42,15 +42,19 @@ Los textos `__SITE_URL__` y `__LASTMOD__` se completan solos al publicar con la 
 
 Cambiá el archivo (por ejemplo `index.html`) desde la web de GitHub con el ícono del lápiz y guardá con **Commit changes**. En uno o dos minutos el cambio se ve online. El avance se sigue en la pestaña **Actions**.
 
-## Usar un dominio propio (cuando lo tengas)
+## Dominio propio (full-growth.com.ar)
 
-1. Comprá el dominio, por ejemplo en [nic.ar](https://nic.ar) para `.com.ar`.
-2. En GitHub: **Settings → Pages → Custom domain**, escribí el dominio (por ejemplo `fullgrowth.com.ar`) y guardá.
-3. En el panel DNS de tu dominio cargá estos registros:
-   - Cuatro registros **A** para `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - Un registro **CNAME** para `www` que apunte a `TU-USUARIO.github.io`
-4. Cuando GitHub verifique el dominio, activá **Enforce HTTPS**.
-5. Volvé a correr **Publicar sitio** en la pestaña **Actions** para que la dirección nueva quede en Google y en las vistas previas de redes.
+El dominio se compra en **NIC Argentina** y el DNS se maneja en **Cloudflare** (plan gratis). NIC no permite cargar registros DNS: solo deja "delegar" el dominio a los servidores de otro servicio, en este caso Cloudflare.
+
+1. **Comprar en NIC:** en [nic.ar](https://nic.ar) buscá `full-growth.com.ar` → **Quiero registrarlo** → entrá con CUIT y Clave Fiscal (nivel 2 o superior) → **Registrar** → **Confirmar Trámite** → pagá con tarjeta, PagoMisCuentas o Rapipago.
+2. **Sumar el dominio a Cloudflare:** creá una cuenta gratis en [cloudflare.com](https://dash.cloudflare.com/sign-up), agregá `full-growth.com.ar`, elegí el plan **Free** y anotá los **dos nameservers** que te asigna (algo como `xxx.ns.cloudflare.com`).
+3. **Delegar en NIC:** en NIC Argentina, en tus dominios, entrá a **Delegar** y cargá los dos nameservers de Cloudflare. El cambio tarda de minutos a 24 horas; Cloudflare te avisa por email cuando el dominio queda **Active**.
+4. **Registros DNS en Cloudflare** (DNS → Records), todos con la nube en gris (**DNS only**):
+   - Cuatro registros **A** con nombre `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - Un registro **CNAME** con nombre `www` que apunte a `alxrconluna06.github.io`
+5. **Verificar el dominio en GitHub** (evita que otra cuenta lo use): foto de perfil → **Settings → Pages → Add a domain**, escribí `full-growth.com.ar` y cargá en Cloudflare el registro **TXT** que te muestra. Después tocá **Verify**.
+6. **Conectar el sitio:** en el repositorio, **Settings → Pages → Custom domain**, escribí `full-growth.com.ar` y **Save**. Cuando el chequeo dé OK, activá **Enforce HTTPS** (el certificado puede tardar hasta un día).
+7. Volvé a correr **Publicar sitio** en la pestaña **Actions** para que la dirección nueva quede en Google y en las vistas previas de redes.
 
 ## Después de publicar
 
@@ -73,6 +77,6 @@ El archivo `CLAUDE.md` tiene todo el contexto del proyecto (diseño, tono, decis
 ## Contacto configurado en el sitio
 
 - WhatsApp: +54 9 11 5122-7198
-- Email: alxrconluna@gmail.com
+- Email: info@full-growth.com.ar
 
 Para cambiarlos, buscá esos datos en `index.html` y reemplazalos en todos los lugares donde aparecen.

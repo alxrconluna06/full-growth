@@ -1,6 +1,6 @@
 # Full Growth · sitio web
 
-Sitio de una sola página de **Full Growth**, consultora de crecimiento digital y E-commerce para marcas argentinas (Mercado Libre, tienda propia, recompra y tecnología). Publicado en GitHub Pages: https://alxrconluna06.github.io/full-growth/
+Sitio de una sola página de **Full Growth**, consultora de crecimiento digital y E-commerce para marcas argentinas (Mercado Libre, tienda propia, recompra y tecnología). Publicado en GitHub Pages con dominio propio: https://full-growth.com.ar (comprado en NIC Argentina, DNS en Cloudflare, vence el 10/10/2027; la dirección vieja alxrconluna06.github.io/full-growth/ redirige sola)
 
 Dueño del proyecto: Luna (alxrconluna@gmail.com). Habla en español rioplatense; respondé siempre en español, con voseo.
 
@@ -36,7 +36,7 @@ Checklist mínimo después de cada cambio:
 - Paleta violeta. Acento `--accent: #7c2cff`. Fondos oscuros `--night: #0d0d0f`. Lila suave `#ebdfff → #cdb1ff`. Verde `#12a70a` solo para subas y reputación.
 - Todos los colores salen de los tokens en `:root`; hay modo oscuro por `prefers-color-scheme` y `data-theme`.
 - Radios: 10/16/24/32 px. Botones píldora con texto que "rueda" al pasar el mouse.
-- **Logo:** "FULL / GROWTH" en mayúsculas espaciadas (`.lg-a`), con la barra en violeta, sobre recuadro blanco. Misma tipografía y tamaño que el botón "Pedir diagnóstico".
+- **Logo (M4, elegido el 10/10/2026):** "FULL // GROWTH" en mayúsculas espaciadas (`.lg-a`, Stack Sans Headline 600, `letter-spacing:.22em`) con doble barra: la primera lila `#a77bff` y la segunda violeta intenso `#5a1fc7` (markup `FULL<b><i>/</i><i>/</i></b>GROWTH`). Va sobre recuadro blanco en el menú, al mismo tamaño que el botón "Pedir diagnóstico"; en el pie toma el color del texto (`--ink`) para verse en modo oscuro. Las variantes descartadas están en `Logo Full Growth.html` y `Logo Full Growth - Mayusculas.html`, en la raíz de PROYECTO LUNA.
 - **Menú:** logo, menú y botón miden lo mismo (56 px). Al bajar los tres se juntan en el centro (`.nav.compact`, ancho calculado en JS). "Pedir diagnóstico" es un degradé violeta con borde suave y desenfoque.
 - Colores de las tarjetas de "Qué hacemos": Diagnóstico violeta, Marketplaces negro, Tienda propia blanco, Recompra negro, Tecnología lila.
 - Pestañas de "Para quién": cada una con un degradé violeta distinto, nunca negro.
@@ -47,6 +47,7 @@ Checklist mínimo después de cada cambio:
 - Textos en español rioplatense, cercanos y concretos, hablando desde el lado del cliente. Nada de jerga (ROAS, ACOS, ERP, onboarding) en títulos.
 - **No mostrar precios** de ningún servicio.
 - Se escribe **"E-commerce"** con E mayúscula y guion.
+- **Títulos y botones con mayúscula en cada palabra** (estilo título): "Hacé Crecer Tu Marca Dentro y Fuera de Mercado Libre.", "Todo Lo Que Tu Canal Digital Necesita, En Un Mismo Equipo", "Pedir Diagnóstico". Solo van en minúscula "y" (e, o, u) y "de", salvo al empezar una frase; todas las demás palabras llevan mayúscula. Aplica a h1–h4, eyebrows, pestañas, botones, menú, preguntas frecuentes, títulos de paneles y frases grandes de "Para quién". En "Qué hacemos", "Para quién" y "Soluciones" también va en viñetas, etiquetas, chips y textos cortos de las tarjetas. Los párrafos y el mensaje de ejemplo de WhatsApp siguen en minúscula normal.
 - Primero promociones y herramientas sin costo; la publicidad paga es un complemento, nunca la base.
 - "Precios iguales en todos los canales" no se promete (las comisiones de Mercado Libre lo impiden).
 - No usar nombres o marcas de Mercado Libre como propios (por ejemplo, "Vendedor líder · Nivel platino" en lugar de "MercadoLíder Platinum"). El pie aclara que Full Growth es independiente.
@@ -69,7 +70,7 @@ Checklist mínimo después de cada cambio:
 ## Contacto configurado
 
 - WhatsApp: +54 9 11 5122-7198 (`https://wa.me/5491151227198`)
-- Email: alxrconluna@gmail.com
+- Email: info@full-growth.com.ar
 
 ## Cosas a tener en cuenta en el código
 
@@ -80,5 +81,4 @@ Checklist mínimo después de cada cambio:
 
 ## Pendientes
 
-- Comprar y conectar dominio propio (pasos en `README.md`).
 - Cargar el sitio en Google Search Console y enviar `sitemap.xml`.
