@@ -59,9 +59,9 @@ Checklist mínimo después de cada cambio:
 
 1. Menú fijo + inicio a pantalla completa con título y tres paneles: Métricas, Reputación de la cuenta, Origen de tus ventas (misma altura).
 2. "Por qué ahora": cifras del E-commerce argentino 2025.
-3. "Qué hacemos" (`#servicios`): Diagnóstico 360 primero ("Por dónde empezar"), Marketplaces (Gestión Mensual, sin publicidad como base), Tienda propia, Postventa y Fidelización, Panel de Datos (próximamente).
+3. "Qué hacemos" (`#servicios`): Diagnóstico 360 primero ("Por dónde empezar"), Marketplaces (Gestión Integral, sin publicidad como base), Tienda propia, Postventa y Fidelización, Panel de Datos (próximamente).
 4. "Para quién" (`#para-quien`): 5 pestañas (Quiero vender más, Fabrico o importo, Tengo una marca conocida, Tengo locales, Vendo en varios canales).
-5. "Soluciones" (`#planes`): pestañas sin precios (Marketplaces · Tienda Propia · Postventa y Tecnología) + combo "Canal Doble" en lila (Gestión Mensual + Tienda Online + Postventa y Fidelización). Los servicios salen de `Full Growth - Servicios desglosados` (raíz de PROYECTO LUNA): sin Landing, Integraciones ni App Propia; Esencial y Crecimiento unidos en "Gestión Mensual".
+5. "Soluciones" (`#planes`): pestañas sin precios (Marketplaces · Tienda Propia · Postventa y Tecnología) + combo "Canal Doble" en lila (Gestión Integral + Tienda Online + Postventa y Fidelización). Los servicios salen de `Full Growth - Servicios desglosados` (raíz de PROYECTO LUNA): sin Landing, Integraciones ni App Propia; Full oculto por ahora; Esencial y Crecimiento unidos en "Gestión Integral".
 6. Contacto (`#contacto`): formulario que arma el mensaje y lo manda por WhatsApp o email.
 7. Pie de página: "Pensamos tu E-commerce como si fuera nuestro."
 - Las Preguntas frecuentes (`#preguntas`) NO están en la página: se abren como ventana desde el menú y el pie.
