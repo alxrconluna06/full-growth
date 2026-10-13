@@ -70,7 +70,7 @@ img,svg{max-width:100%}
   --surface-2:#f1f1f3;
   --ink:#18181b;
   --ink-2:#3f3f46;
-  --muted:#5b5b66;
+  --muted:#4a4a55;
   --line:#e4e4e8;
   --accent:#7c2cff;
   --accent-ink:#ffffff;
@@ -81,6 +81,8 @@ img,svg{max-width:100%}
   --night-ink:#f6f6f7;
   --night-muted:rgba(255,255,255,.62);
   --good:#12a70a;
+  --good-ink:#0b6b32;
+  --accent-fill:#7c2cff;
   --indigo:#6d7bff;
   --violet:#9b5cff;
   --shadow:0 1px 2px rgba(20,20,30,.05),0 12px 32px -12px rgba(20,20,30,.12);
@@ -134,7 +136,7 @@ a{color:inherit}
 .btn .roll span{display:block;line-height:1.2em;transition:transform .45s var(--ease)}
 .btn:hover .roll span{transform:translateY(-100%)}
 .btn:active{transform:scale(.97)}
-.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary{background:var(--accent-fill);color:var(--accent-ink)}
 .btn-light{background:#fff;color:#111}
 .btn-ghost{background:rgba(255,255,255,.12);color:#fff;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2)}
 .btn-dark{background:var(--ink);color:var(--bg)}
@@ -250,7 +252,7 @@ body.menu-open .wa-fab{opacity:0;pointer-events:none}
 .dash-rep .thermo{margin-block:16px 14px}
 .rep-rows{display:grid;gap:7px;margin-bottom:16px}
 .rep-rows div{display:flex;justify-content:space-between;font-size:12.5px;color:#52525b;padding:8px 10px;background:#f6f6f8;border-radius:9px}
-.rep-rows b{color:#0d8a37;font-weight:600}
+.rep-rows b{color:var(--good-ink);font-weight:600}
 .dash-rep .rep-head{margin-top:14px}
 .dash-origin .o-line{margin-top:auto}
 @media (min-width:1500px){.dash{padding:26px}.rep-level{font-size:17px}.rep-stats b{font-size:22px}.rep-stats small,.o-bars div{font-size:13px}.o-bars i{height:14px}.m-kpis b{font-size:20px}}
@@ -261,9 +263,9 @@ body.menu-open .wa-fab{opacity:0;pointer-events:none}
 }
 @media (max-width:640px){.dash-stage{grid-template-columns:1fr;gap:14px}.dash{padding:18px}}
 .dash-rep .rep-head{display:flex;gap:10px;align-items:flex-start;margin-top:4px}
-.rep-medal{width:34px;height:34px;border-radius:50%;background:#e8f7e7;color:#0d8a37;display:grid;place-items:center;flex:none}
+.rep-medal{width:34px;height:34px;border-radius:50%;background:#e8f7e7;color:var(--good-ink);display:grid;place-items:center;flex:none}
 .rep-medal svg{width:20px;height:20px}
-.rep-level{display:block;color:#0d8a37;font:600 15px/1.2 var(--f-display);letter-spacing:-.01em}
+.rep-level{display:block;color:var(--good-ink);font:600 15px/1.2 var(--f-display);letter-spacing:-.01em}
 .rep-sub{display:block;font-size:12.5px;color:#52525b;margin-top:3px}
 .thermo{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin:16px 0 18px}
 .thermo span{height:8px;border-radius:2px}
@@ -280,12 +282,12 @@ body.menu-open .wa-fab{opacity:0;pointer-events:none}
 .m-crumb span{color:#a1a1aa;margin-inline:3px}
 .m-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:12px;border:1px solid #eeeef1;border-radius:12px;margin-bottom:14px}
 .m-kpis div{display:grid;gap:2px;min-width:0}
-.m-kpis small{font-size:11px;color:#71717a}
+.m-kpis small{font-size:11px;color:#5b5b66}
 .m-kpis b{font:600 17px/1.15 var(--f-display);color:#18181b;letter-spacing:-.02em}
-.m-kpis em,.o-total em{font-style:normal;font-size:11px;font-weight:600;color:#0d8a37}
+.m-kpis em,.o-total em{font-style:normal;font-size:11px;font-weight:600;color:var(--good-ink)}
 .m-sub{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
 .m-pills{display:inline-flex;background:#f4f4f6;border-radius:999px;padding:3px;font-size:11px;font-weight:600}
-.m-pills span{padding:4px 10px;border-radius:999px;color:#71717a}
+.m-pills span{padding:4px 10px;border-radius:999px;color:#5b5b66}
 .m-pills span.on{background:#fff;color:#18181b;box-shadow:0 1px 3px rgba(0,0,0,.1)}
 .m-plot{position:relative}
 .m-chart{width:100%;height:auto;display:block}
@@ -299,7 +301,7 @@ body.menu-open .wa-fab{opacity:0;pointer-events:none}
 .m-tip div span{margin-left:auto;font-weight:600;color:#18181b;font-variant-numeric:tabular-nums}
 .m-tip i{width:7px;height:7px;border-radius:50%;display:inline-block}
 .o-total{display:flex;align-items:baseline;gap:8px;margin-bottom:12px;flex-wrap:wrap}
-.o-total small{font-size:11.5px;color:#71717a;width:100%}
+.o-total small{font-size:11.5px;color:#5b5b66;width:100%}
 .o-total b{font:600 26px/1 var(--f-display);color:#18181b;letter-spacing:-.03em}
 .o-bars{display:grid;gap:9px}
 .o-bars div{display:grid;grid-template-columns:78px 1fr 34px;gap:8px;align-items:center;font-size:11.5px;color:#52525b}
@@ -365,6 +367,7 @@ body.menu-open .wa-fab{opacity:0;pointer-events:none}
 .b{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(22px,3vw,32px);display:flex;flex-direction:column;gap:14px;min-width:0;overflow:hidden;position:relative}
 .b h3{font-size:clamp(22px,2.4vw,28px)}
 .b .kicker{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.b.dark .kicker{color:#b48cff}
 .b ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 .b li{display:flex;gap:10px;align-items:flex-start;font-size:15px}
 .b li svg{flex:none;width:18px;height:18px;margin-top:3px;color:var(--accent)}
@@ -384,7 +387,7 @@ body.menu-open .wa-fab{opacity:0;pointer-events:none}
 .b.lilac .flow i{background:#4d16b0}
 .b.dark .notif-card{background:#fff;color:#3f3f46}
 .b.dark .notif-card b{color:#18181b}
-.b.dark .notif-card .meta{color:#71717a}
+.b.dark .notif-card .meta{color:#5b5b66}
 .b.deep{background:linear-gradient(160deg,#3a0f86,#1a0838);border:0;color:rgba(255,255,255,.8)}
 .b.deep h3{color:#fff}
 .b.deep .kicker{color:#cdb1ff}
@@ -392,8 +395,8 @@ body.menu-open .wa-fab{opacity:0;pointer-events:none}
 .b.deep .price-pill{background:rgba(255,255,255,.12);color:#fff}
 .b.deep .notif-card{background:rgba(255,255,255,.96);color:#3f3f46}
 .b.deep .notif-card b{color:#18181b}
-.b.deep .notif-card .meta{color:#71717a}
-.b.ember{background:linear-gradient(160deg,#9a4dff,#5a1fc7 70%);border:0;color:rgba(255,255,255,.88)}
+.b.deep .notif-card .meta{color:#5b5b66}
+.b.ember{background:linear-gradient(160deg,#9a4dff,#5a1fc7 70%);border:0;color:#fff}
 .b.ember h3{color:#fff}
 .b.ember .kicker{color:#fff;opacity:.85}
 .b.ember li svg{color:#fff}
@@ -460,10 +463,10 @@ body.menu-open .wa-fab{opacity:0;pointer-events:none}
 .tab[aria-selected="true"]{background:var(--ink);color:var(--bg)}
 .seg-panel{display:grid;grid-template-columns:1.1fr 1fr;gap:18px}
 .seg-visual{border-radius:var(--r-xl);min-height:340px;position:relative;overflow:hidden;padding:28px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;background:var(--g,linear-gradient(150deg,#9a4dff,#2e0b6b))}
-.seg-visual::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 80% 20%,rgba(255,255,255,.28),transparent 60%);pointer-events:none}
+.seg-visual::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 80% 20%,rgba(255,255,255,.16),transparent 60%);pointer-events:none}
 .seg-visual .seg-big{font:500 clamp(34px,4.6vw,56px)/1.04 var(--f-display);letter-spacing:-.04em;position:relative;max-width:12ch;margin-top:10px}
 .seg-visual .seg-chips{display:flex;gap:8px;flex-wrap:wrap;position:relative}
-.seg-visual .seg-chips span{font-size:13px;font-weight:600;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.18);backdrop-filter:blur(6px)}
+.seg-visual .seg-chips span{font-size:13px;font-weight:600;padding:8px 12px;border-radius:999px;background:rgba(0,0,0,.22);backdrop-filter:blur(6px)}
 .seg-copy{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(24px,3.4vw,40px);display:flex;flex-direction:column;gap:18px}
 .seg-copy h3{font-size:clamp(24px,2.8vw,32px)}
 .seg-label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--muted)}
@@ -536,7 +539,7 @@ body.menu-open .wa-fab{opacity:0;pointer-events:none}
 .rt{background:var(--surface-2);border-radius:14px;padding:14px}
 .rt span{font-size:12px;display:block}
 .rt strong{display:block;font:500 24px/1.1 var(--f-display);color:var(--ink);letter-spacing:-.02em;margin-top:6px}
-.rt em{font-style:normal;font-size:12px;font-weight:600;color:var(--good)}
+.rt em{font-style:normal;font-size:12px;font-weight:600;color:var(--good-ink)}
 .bars{display:grid;gap:12px}
 .bar-row{display:grid;grid-template-columns:110px 1fr 70px;gap:12px;align-items:center;font-size:13px}
 .bar-row b{text-align:right;color:var(--ink);font-weight:600}
@@ -652,7 +655,7 @@ html.faq-lock,html.faq-lock body{overflow:hidden}
 @media (max-width:420px){.contact{flex-wrap:wrap}.contact .act{margin-left:52px}}
 .wa-fab{position:fixed;right:max(16px,env(safe-area-inset-right,0px) + 16px);bottom:calc(env(safe-area-inset-bottom,0px) + 18px);z-index:60;display:flex;align-items:center;gap:0;height:60px;padding:0 15px;border-radius:999px;background:#25d366;color:#fff;text-decoration:none;box-shadow:0 14px 34px -10px rgba(10,80,40,.55);font:600 15px var(--f-body);transition:gap .4s var(--ease),padding .4s var(--ease),transform .3s var(--ease);animation:fabIn .8s var(--ease) 1.8s both}
 .wa-fab svg{width:30px;height:30px;flex:none}
-.wa-fab span{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .45s var(--ease)}
+.wa-fab span{color:#06311a;max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .45s var(--ease)}
 .wa-fab:hover{gap:10px;padding-right:22px}
 .wa-fab:hover span{max-width:140px}
 .wa-fab:active{transform:scale(.95)}
@@ -1014,7 +1017,7 @@ details > p{overflow:hidden}
     </div>
 
     <div class="seg-panel show" role="tabpanel" id="p-0" aria-labelledby="t-0">
-      <div class="seg-visual" style="--g:linear-gradient(150deg,#a855f7,#4c1d95 80%)"><div class="seg-big">Tu Cuenta Puede Dar Mucho Más.</div><div class="seg-chips"><span>Publicaciones</span><span>Precios</span><span>Promociones</span></div></div>
+      <div class="seg-visual" style="--g:linear-gradient(150deg,#7e22ce,#4c1d95 80%)"><div class="seg-big">Tu Cuenta Puede Dar Mucho Más.</div><div class="seg-chips"><span>Publicaciones</span><span>Precios</span><span>Promociones</span></div></div>
       <div class="seg-copy"><span class="seg-label">Lo Que Suele Pasar</span><h3>Ya Tenés Ventas. Ahora Toca Escalarlas.</h3><p>Optimizamos tus publicaciones, aprovechamos las promociones sin costo de la plataforma y cuidamos tu reputación todos los días. Así tus ventas vuelven a crecer.</p><div class="seg-entry"><span>Cómo Arrancamos</span><b>Diagnóstico 360 y Gestión Integral</b></div></div>
     </div>
     <div class="seg-panel" role="tabpanel" id="p-1" aria-labelledby="t-1" hidden>
@@ -1022,11 +1025,11 @@ details > p{overflow:hidden}
       <div class="seg-copy"><span class="seg-label">Lo Que Suele Pasar</span><h3>Tenés El Producto, Pero El Margen Se Lo Lleva Otro</h3><p>Vender directo al consumidor te deja más ganancia por unidad. Te ayudamos a hacerlo en Mercado Libre y en tu propia tienda, sin descuidar a tus clientes mayoristas.</p><div class="seg-entry"><span>Cómo Arrancamos</span><b>Lanzamiento En Mercado Libre y Tienda</b></div></div>
     </div>
     <div class="seg-panel" role="tabpanel" id="p-2" aria-labelledby="t-2" hidden>
-      <div class="seg-visual" style="--g:linear-gradient(165deg,#c084fc,#6b21a8 80%)"><div class="seg-big">Tu Marca Ya Vende. Hagamos Que Rinda Más.</div><div class="seg-chips"><span>Diagnóstico</span><span>Plan de Acción</span><span>Postventa</span></div></div>
+      <div class="seg-visual" style="--g:linear-gradient(165deg,#9333ea,#581c87 80%)"><div class="seg-big">Tu Marca Ya Vende. Hagamos Que Rinda Más.</div><div class="seg-chips"><span>Diagnóstico</span><span>Plan de Acción</span><span>Postventa</span></div></div>
       <div class="seg-copy"><span class="seg-label">Lo Que Suele Pasar</span><h3>Tenés Marca, Tienda y Ventas, Pero Sentís Que Podría Dar Más</h3><p>Analizamos todos tus canales para encontrar dónde está la oportunidad, armamos un plan de acción claro y sumamos postventa para que tus clientes vuelvan más seguido.</p><div class="seg-entry"><span>Cómo Arrancamos</span><b>Diagnóstico 360 y Plan de Acción</b></div></div>
     </div>
     <div class="seg-panel" role="tabpanel" id="p-3" aria-labelledby="t-3" hidden>
-      <div class="seg-visual" style="--g:linear-gradient(120deg,#d946ef,#6d28d9 75%)"><div class="seg-big">Del Mostrador A La Pantalla.</div><div class="seg-chips"><span>Marketplace</span><span>Tienda Online</span><span>WhatsApp</span></div></div>
+      <div class="seg-visual" style="--g:linear-gradient(120deg,#a21caf,#5b21b6 75%)"><div class="seg-big">Del Mostrador A La Pantalla.</div><div class="seg-chips"><span>Marketplace</span><span>Tienda Online</span><span>WhatsApp</span></div></div>
       <div class="seg-copy"><span class="seg-label">Lo Que Suele Pasar</span><h3>Tenés Clientes Fieles En El Local, Pero Casi No Vendés Online</h3><p>Armamos tu presencia digital completa: marketplace para salir a vender rápido, tienda propia y mensajes para que tus clientes de siempre también te compren online.</p><div class="seg-entry"><span>Cómo Arrancamos</span><b>Plan Digital Completo</b></div></div>
     </div>
     <div class="seg-panel" role="tabpanel" id="p-4" aria-labelledby="t-4" hidden>
