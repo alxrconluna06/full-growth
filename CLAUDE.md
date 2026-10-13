@@ -33,7 +33,8 @@ Checklist mínimo después de cada cambio:
 
 ## Sistema visual
 
-- Paleta violeta. Acento `--accent: #7c2cff`. Fondos oscuros `--night: #0d0d0f`. Lila suave `#ebdfff → #cdb1ff`. Verde `#12a70a` solo para subas y reputación.
+- Paleta violeta. Acento `--accent: #7c2cff` (en modo oscuro `#9d63ff`, solo para texto); los botones sólidos usan `--accent-fill: #7c2cff` en los dos modos. Fondos oscuros `--night: #0d0d0f`. Lila suave `#ebdfff → #cdb1ff`. Verde `#12a70a` (`--good`) solo para barras y gráficos de subas; para texto verde, `--good-ink: #0b6b32`.
+- **Contraste (13/10/2026):** todo el texto pasa WCAG AA en modo claro y oscuro (medido con `.claude/contrast-audit.js` en la raíz de PROYECTO LUNA). Reglas: `--muted` es `#4a4a55`; sobre tarjetas negras las etiquetas van en lila `#b48cff`, no en `--accent`; texto blanco solo sobre violetas profundos (degradés de "Para quién" que arranquen en `#7e22ce`, `#9333ea`, `#a21caf` o más oscuros), con chips `rgba(0,0,0,.22)`; la etiqueta del botón flotante de WhatsApp va en `#06311a`.
 - Todos los colores salen de los tokens en `:root`; hay modo oscuro por `prefers-color-scheme` y `data-theme`.
 - Radios: 10/16/24/32 px. Botones píldora con texto que "rueda" al pasar el mouse.
 - **Logo (M4, elegido el 10/10/2026):** "FULL // GROWTH" en mayúsculas espaciadas (`.lg-a`, Stack Sans Headline 600, `letter-spacing:.22em`) con doble barra: la primera lila `#a77bff` y la segunda violeta intenso `#5a1fc7` (markup `FULL<b><i>/</i><i>/</i></b>GROWTH`). Va sobre recuadro blanco en el menú, al mismo tamaño que el botón "Pedir diagnóstico"; en el pie toma el color del texto (`--ink`) para verse en modo oscuro. Las variantes descartadas están en `Logo Full Growth.html` y `Logo Full Growth - Mayusculas.html`, en la raíz de PROYECTO LUNA.
